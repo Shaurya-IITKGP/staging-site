@@ -5,35 +5,53 @@ import gsap from "gsap";
 
 
 const Animate = () =>{
-
-    const circle = [1,2,3,4,5,6];
+    const text = [
+        { text: 'C' },
+        { text: 'O' },
+        { text: 'M' },
+        { text: 'I' },
+        { text: 'N' },
+        { text: 'G' },
+        { text: ' ' }, // adding space between words
+        { text: 'S' },
+        { text: 'O' },
+        { text: 'O' },
+        { text: 'N' }
+    ];
     const container = useRef(null);
 
     useGSAP(()=>{
-        gsap.from(".circle",{
-            scale : 0,
-            duration:1,
-            repeat:-1,
-            ease:"power2.inOut",
-            yoyo:true,
-            stagger:{
-                each:0.4,
+        gsap.from(".ancient-letter",{
+            opacity: 0,
+            y: 20,
+            duration: 1.5,
+            repeat: -1,
+            ease: "power1.inOut",
+            yoyo: true,
+            stagger: {
+                each: 0.15,
             }
         });
     },{scope:container});
 
     return(
-        <div className="">
-         
-
-       <div ref= {container} className="flex">
-       {circle.map((_, index) => (
-          <div key={index} className="circle  gradient-blue">
-            {index + 1}
+        <div ref={container} className="flex justify-center items-center min-h-[200px]">
+            <div className="flex flex-wrap justify-center gap-2">
+                {text.map((item, index) => (
+                    <span 
+                        key={index} 
+                        className="ancient-letter text-4xl md:text-6xl font-serif
+                        text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
+                        font-bold tracking-wider"
+                        style={{
+                            textShadow: '0 0 5px rgba(193, 154, 107, 0.5)',
+                            fontFamily: "'Cinzel Decorative', serif"
+                        }}
+                    >
+                        {item.text}
+                    </span>
+                ))}
             </div>
-       ))}
-       </div>
-          
         </div>
     )
 }
