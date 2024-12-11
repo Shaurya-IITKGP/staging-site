@@ -19,3 +19,89 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.font-pacifico {
+  font-family: 'Pacifico', ; /* Use the Pacifico font */
+}
+logo-glow {
+  filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8)) 
+          drop-shadow(0 0 20px rgba(255, 165, 0, 0.6));
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 165, 0, 1));
+  }
+}
+.flame-container {
+  position: absolute;
+  bottom: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.flame {
+  width: 10px; /* Width of the flame */
+  height: 20px; /* Height of the flame */
+  background: linear-gradient(to top, rgba(255, 165, 0, 0.8), rgba(255, 0, 0, 0.8));
+  border-radius: 5px;
+  margin: 0 5px;
+  animation: flame-animation 0.5s infinite alternate;
+}
+@keyframes flame-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.animate-typing {
+  overflow: hidden; /* Ensures the text is hidden until it is typed */
+  white-space: nowrap; /* Prevents text wrapping */
+  border-right: 4px solid rgba(255, 255, 255, 0.75); /* Cursor effect */
+  animation: typing 2s steps(10) forwards; /* Adjust typing speed and steps */
+}
+.flame-container {
+  position: absolute;
+  bottom: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.flame {
+  width: 10px; /* Width of the flame */
+  height: 20px; /* Height of the flame */
+  background: linear-gradient(to top, rgba(255, 165, 0, 0.8), rgba(255, 0, 0, 0.8));
+  border-radius: 5px;
+  margin: 0 5px;
+  animation: flame-animation 0.5s infinite alternate;
+}
+@keyframes flame-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
