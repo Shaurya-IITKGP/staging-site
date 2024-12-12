@@ -19,7 +19,7 @@ const rajdhani = Rajdhani({
 // Navigation items
 const navItems = [
   { 
-    name: "About Us", 
+    name: "About-Us", 
     href: "/about", 
     color: "from-lightOrange to-darkOrange",
     glow: "lightOrange",
@@ -55,7 +55,7 @@ const navItems = [
   },
 
   { 
-    name: "CA Portal", 
+    name: "CA-Portal", 
     href: "/ca-portal", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
@@ -241,7 +241,7 @@ const AnimatedNavbar: React.FC = () => {
             </div>
             
             {/* Title Section */}
-            <div className="flex flex-col items-start">
+            {/* <div className="flex flex-col items-start">
               <span className="text-4xl font-bold bg-gradient-to-r from-lightOrange to-darkOrange bg-clip-text text-transparent">
                 SHAURYA
               </span>
@@ -249,7 +249,7 @@ const AnimatedNavbar: React.FC = () => {
               <span className="text-lg text-lightOrange/90 font-cinzel tracking-wider">
                 Veerashwa Kshetra
               </span>
-            </div>
+            </div> */}
           </motion.a>
 
           {/* Desktop Navigation */}

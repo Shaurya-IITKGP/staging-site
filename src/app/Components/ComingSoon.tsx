@@ -8,7 +8,8 @@ export default function ComingSoon() {
 
       
       {/* Background layers */}
-      <div className="fixed inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80">
+      
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80">
       </div>
       <div className="fixed inset-0 bg-[url('/image.png')] bg-cover opacity-30">
       </div>
@@ -28,7 +29,8 @@ export default function ComingSoon() {
 
    
       <div>
-        <Footer />
+     <Footer/>
+        
       </div>
     </div>
   );
