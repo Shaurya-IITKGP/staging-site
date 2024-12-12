@@ -2,13 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  images:{
-    remotePatterns:[
-      {
-        protocol:"https",
-        hostname:"www.w3.org"
-      }
-    ]
+  images: {
+    domains: ['shaurya-iitkgp.github.io/staging-site/'],
+    unoptimized: true, 
   }
 };
 
