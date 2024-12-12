@@ -161,7 +161,7 @@ const AnimatedNavbar: React.FC = () => {
         {/* First Eagle */}
         <motion.div className="absolute w-16 h-16">
           <Image
-            src="/eagle.svg"
+            src="/staging-site/eagle.svg"
             alt="Flying Eagle"
             width={64}
             height={64}
@@ -171,7 +171,7 @@ const AnimatedNavbar: React.FC = () => {
         
         {/* Second Eagle */}
         <motion.img
-          src="/eagle.svg"
+          src="/staging-site/eagle.svg"
           alt="Flying Eagle"
           className="absolute w-12 h-12 filter drop-shadow-[0_0_8px_rgba(243,179,51,0.3)]"
           variants={eagleVariants}
@@ -188,7 +188,7 @@ const AnimatedNavbar: React.FC = () => {
         
         {/* Third Eagle */}
         <motion.img
-          src="/eagle.svg"
+          src="/staging-site/eagle.svg"
           alt="Flying Eagle"
           className="absolute w-8 h-8 filter drop-shadow-[0_0_6px_rgba(243,179,51,0.3)]"
           variants={{
