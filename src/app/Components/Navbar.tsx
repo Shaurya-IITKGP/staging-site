@@ -230,7 +230,7 @@ const AnimatedNavbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <motion.a
-            href="/"
+            href="/staging-site"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className={`${cinzel.className} relative group flex items-center gap-3`}
@@ -238,7 +238,7 @@ const AnimatedNavbar: React.FC = () => {
             {/* Logo Container */}
             <div className="relative w-32 h-32 overflow-hidden transform transition-transform duration-300">
               <Image
-                src="/Shaurya_Logo.png"
+                src="/staging-site/Shaurya_Logo.png"
                 alt="Shaurya Logo"
                 width={128}
                 height={128}
