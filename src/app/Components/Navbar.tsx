@@ -159,18 +159,15 @@ const AnimatedNavbar: React.FC = () => {
       {/* Flying Eagles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* First Eagle */}
-        <motion.img
-          src="/eagle.svg"
-          alt="Flying Eagle"
-          className="absolute w-16 h-16 filter drop-shadow-[0_0_10px_rgba(243,179,51,0.5)]"
-          variants={eagleVariants}
-          initial="initial"
-          animate="animate"
-          style={{ top: '20%' }}
-          onUpdate={(latest) => {
-            addTrail(latest.x as number, latest.y as number);
-          }}
-        />
+        <motion.div className="absolute w-16 h-16">
+          <Image
+            src="/eagle.svg"
+            alt="Flying Eagle"
+            width={64}
+            height={64}
+            className="filter drop-shadow-[0_0_10px_rgba(243,179,51,0.5)]"
+          />
+        </motion.div>
         
         {/* Second Eagle */}
         <motion.img
@@ -231,9 +228,11 @@ const AnimatedNavbar: React.FC = () => {
           >
             {/* Logo Container */}
             <div className="relative w-32 h-32 overflow-hidden transform transition-transform duration-300">
-              <img
+              <Image
                 src="/Shaurya_Logo.png"
                 alt="Shaurya Logo"
+                width={128}
+                height={128}
                 className="w-full h-full object-contain transform scale-110 transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 border-2 border-lightOrange/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -10,51 +10,35 @@ const Footer = () => {
      
       <footer className="bg-gradient-to-t from-[#3B2A1A] to-transparent text-[#E6D5C3] py-4 border-t-2 border-[#8B4513]  scale-100 origin-bottom">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             {/* Contact Information */}
-            <div>
+            <div className="flex flex-col items-center text-center">
               <h3 className="text-xl font-bold mb-4 text-[#D4A76A] font-serif">Sacred Contact</h3>
               <ul className="space-y-2">
-                <li className="flex items-center hover:text-[#D4A76A] transition-colors">
+                <li className="flex items-center justify-center hover:text-[#D4A76A] transition-colors">
                   <i className="fas fa-drum mr-2"></i>
-                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  <a href="tel:+916002515029">+91 6002515029</a>
                 </li>
-                <li className="flex items-center hover:text-[#D4A76A] transition-colors">
+                <li className="flex items-center justify-center hover:text-[#D4A76A] transition-colors">
                   <i className="fas fa-feather mr-2"></i>
-                  <a href="mailto:contact@example.com">contact@example.com</a>
+                  <a href="mailto:tuhsinsrahman.shaurya.iitkgp@gmail.com">tuhsinsrahman.shaurya.iitkgp@gmail.com</a>
                 </li>
-                <li className="flex items-center hover:text-[#D4A76A] transition-colors">
+                <li className="flex items-center justify-center hover:text-[#D4A76A] transition-colors">
                   <i className="fas fa-campground mr-2"></i>
                   <div>
-                    <p>Tribal Grounds</p>
-                    <p>Sacred Valley, Land 12345</p>
+                    <p>IIT Kharagpur</p>
+                    <p>West Bengal, India</p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-xl font-bold mb-4 text-[#D4A76A] font-serif">Warrior Paths</h3>
-              <ul className="space-y-2">
-                <li className="hover:text-[#D4A76A] transition-colors">
-                  <Link href="/about">Our Tribe</Link>
-                </li>
-                <li className="hover:text-[#D4A76A] transition-colors">
-                  <Link href="/services">Sacred Services</Link>
-                </li>
-                <li className="hover:text-[#D4A76A] transition-colors">
-                  <Link href="/contact">Send Message</Link>
-                </li>
-              </ul>
-            </div>
-
             {/* Social Media */}
-            <div>
+            <div className="flex flex-col items-center text-center">
               <h3 className="text-xl font-bold mb-4 text-[#D4A76A] font-serif">Join Our Tribe</h3>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://twitter.com" 
+                  href="https://www.facebook.com/share/HFLKcLA25psDVxjR/?mibextid=qi2Omg/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#D4A76A] transition-colors"
@@ -62,7 +46,7 @@ const Footer = () => {
                   <i className="fas fa-crow text-2xl"></i>
                 </a>
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.instagram.com/shaurya.iitkgp?igsh=MW1wcGRqNHoyNWgzcA==" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#D4A76A] transition-colors"
@@ -70,7 +54,7 @@ const Footer = () => {
                   <i className="fas fa-shield-alt text-2xl"></i>
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/shaurya-iit-kharagpur/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#D4A76A] transition-colors"
