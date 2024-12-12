@@ -40,7 +40,7 @@ export default function MainPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80 h-full"></div>
         <div className="fixed inset-0 z-0">
           <Image
-            src="/mainPage2.jpg"
+            src="/staging-site/mainPage2.jpg"
             alt="Background"
             layout="fill"
             objectFit="cover"
@@ -52,7 +52,7 @@ export default function MainPage() {
         <div className="z-20 flex flex-col md:justify-center md:items-center md:mt-0 mt-60 w-full">
           <div className="relative">
             <Image
-              src="/shaurya_dark_brown-removebg-preview.png"
+              src="/staging-site/shaurya_dark_brown-removebg-preview.png"
               alt="Shaurya Logo"
               width={700}
               height={200}
