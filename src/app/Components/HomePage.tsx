@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Animate from "./animate";
+import Image from "next/image";
 
 export default function MainPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -43,7 +44,7 @@ export default function MainPage() {
       {/* Shaurya Logo with Glowing Effect and Flames */}
       <div className="z-20 flex flex-col md:justify-center md:items-center md:mt-0 mt-60  w-full">
         <div className="relative">
-          <img
+          <Image
             src="/shaurya_dark_brown-removebg-preview.png"
             alt="Shaurya Logo"
             className="w-[700px] h-auto object-contain items-center logo-glow"
