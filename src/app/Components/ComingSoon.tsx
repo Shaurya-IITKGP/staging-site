@@ -1,6 +1,7 @@
 "use client";
 import Animate from "./animate";
 import Footer from "./footer";
+import Image from 'next/image';
 
 export default function ComingSoon() {
   return (
@@ -11,7 +12,13 @@ export default function ComingSoon() {
       
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80">
       </div>
-      <div className="fixed inset-0 bg-[url('/image.png')] bg-cover opacity-30">
+      <div className="fixed inset-0">
+        <Image
+          src="/image.png"
+          alt="Background"
+          fill
+          className="opacity-30 object-cover"
+        />
       </div>
       
 
