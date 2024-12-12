@@ -13,17 +13,18 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full">
             {/* Contact Information */}
             <div className=''>
-            <Image width={200} height={200} className="w-[150px] lg:w-[200px] " src="/staging-site/Shaurya_Logo.png" alt="Shaurya Logo" />
-              <p className="text-[15px] mt-4 lg:mt-0 text-white font-bold font-nunito text-center lg:text-left w-[90%]">
-                <span className=" text-[#D4A76A]  font-serif">Shaurya is not just a sports fest; 
+              <div className="flex justify-center">
+            <Image width={200} height={200} className="w-[150px] lg:w-[200px]  " src="/staging-site/Shaurya_Logo.png" alt="Shaurya Logo" /></div>
+              <p className="flex justify-center text-[15px] mt-4 lg:mt-0 text-white font-bold font-nunito text-center lg:text-left w-[90%]">
+                <span className="text-center text-[#D4A76A]  font-serif">Shaurya is not just a sports fest; 
                 its a vibrant celebration of athleticism and camaraderie,
                 where the spirit of competition ignites passion and unity among colleges nationwide.
                   Join us to witness the thrill of sports as we elevate the game together!</span>
               </p>
             </div>
             
-            <div className='mt-28'>
-            <p className="text-3xl flex justify-center font-bold mb-4 text-[#D4A76A] font-serif">Follow Us</p>
+            <div className='mt-28  xl:border-none border-t  border-[#d4ad75]'>
+            <p className="text-3xl flex justify-center font-bold mb-4 text-[#D4A76A] pt-6 xl:pt-0 font-serif">Follow Us</p>
             <div className="flex justify-center gap-7 mt-4">
               <a href="https://www.facebook.com/share/HFLKcLA25psDVxjR/?mibextid=qi2Omg/">
                 <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/staging-site/facebook.png" alt="Facebook" />
@@ -45,8 +46,8 @@ const Footer = () => {
       
 
        
-          <div className="text-center mt-20">
-            <h3 className="text-xl font-bold mb-4 text-[#D4A76A] font-serif">Contact Us</h3>
+          <div className="text-center mt-20 xl:border-none border-t  border-[#d4ad75]">
+            <h3 className="text-xl font-bold mb-4 text-[#D4A76A] pt-6 xl:pt-0 font-serif">Contact Us</h3>
             <div className="grid xl:gap-2 xl:grid-cols-2">
 
               <div className="space-y-2">

@@ -56,7 +56,7 @@ const navItems = [
 
   { 
     name: "CA-Portal", 
-    href: "/staging-site/ca-portal", 
+    href: "https://ca.shauryaiitkgp.in/", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
     icon: "✨"
