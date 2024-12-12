@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Landing Page -->
+    <url>
+        <loc>https://shauryaiitkgp.in/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Events Page -->
+    <url>
+        <loc>https://shauryaiitkgp.in/events</loc>
+        <priority>1</priority>
+    </url>
+
+    <!-- Teams Page -->
+    <url>
+        <loc>https://shauryaiitkgp.in/teams</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Sponsors Page -->
+    <url>
+        <loc>https://shauryaiitkgp.in/sponsors</loc>
+        <priority>1</priority>
+    </url>
+
+    <!-- Gallery Page (Coming Soon) -->
+    <url>
+        <loc>https://shauryaiitkgp.in/gallery</loc>
+        <priority>0.6</priority>
+    </url>
+</urlset>
