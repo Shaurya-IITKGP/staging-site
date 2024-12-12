@@ -20,35 +20,35 @@ const rajdhani = Rajdhani({
 const navItems = [
   { 
     name: "About-Us", 
-    href: "/about", 
+    href: "/staging-site/about", 
     color: "from-lightOrange to-darkOrange",
     glow: "lightOrange",
     icon: "⚔️"
   },
   { 
     name: "Events", 
-    href: "/events", 
+    href: "/staging-site/events", 
     color: "from-red-600 to-orange-500",
     glow: "red-600",
     icon: "🏹"
   },
   { 
     name: "Gallery", 
-    href: "/gallery", 
+    href: "/staging-site/gallery", 
     color: "from-purple-600 to-red-500",
     glow: "purple-600",
     icon: "🛡️"
   },
   { 
     name: "Sponsors", 
-    href: "/sponsors", 
+    href: "/staging-site/sponsors", 
     color: "from-orange-500 to-yellow-500",
     glow: "orange-500",
     icon: "👑"
   },
   { 
     name: "Teams", 
-    href: "/teams", 
+    href: "/staging-site/teams", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
     icon: "✨"
@@ -56,7 +56,7 @@ const navItems = [
 
   { 
     name: "CA-Portal", 
-    href: "/ca-portal", 
+    href: "/staging-site/ca-portal", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
     icon: "✨"
