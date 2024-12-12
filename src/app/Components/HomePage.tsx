@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Animate from "./animate";
 import Image from "next/image";
+import { px } from "framer-motion";
 
 export default function MainPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -47,7 +48,9 @@ export default function MainPage() {
           <Image
             src="/shaurya_dark_brown-removebg-preview.png"
             alt="Shaurya Logo"
-            className="w-[700px] h-auto object-contain items-center logo-glow"
+            className=" h-auto object-contain items-center logo-glow"
+            width={700}
+            height={200}
           />
         </div>
         <div className="relative">
