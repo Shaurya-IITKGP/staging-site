@@ -20,35 +20,35 @@ const rajdhani = Rajdhani({
 const navItems = [
   { 
     name: "About-Us", 
-    href: "/staging-site/about", 
+    href: "/about", 
     color: "from-lightOrange to-darkOrange",
     glow: "lightOrange",
     icon: "⚔️"
   },
   { 
     name: "Events", 
-    href: "/staging-site/events", 
+    href: "/events", 
     color: "from-red-600 to-orange-500",
     glow: "red-600",
     icon: "🏹"
   },
   { 
     name: "Gallery", 
-    href: "/staging-site/gallery", 
+    href: "/gallery", 
     color: "from-purple-600 to-red-500",
     glow: "purple-600",
     icon: "🛡️"
   },
   { 
     name: "Sponsors", 
-    href: "/staging-site/sponsors", 
+    href: "/sponsors", 
     color: "from-orange-500 to-yellow-500",
     glow: "orange-500",
     icon: "👑"
   },
   { 
     name: "Teams", 
-    href: "/staging-site/teams", 
+    href: "/teams", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
     icon: "✨"
@@ -171,7 +171,7 @@ const AnimatedNavbar: React.FC = () => {
         
         {/* Second Eagle */}
         <motion.img
-          src="/staging-site/eagle.svg"
+          src="/eagle.svg"
           alt="Flying Eagle"
           className="absolute w-12 h-12 filter drop-shadow-[0_0_8px_rgba(243,179,51,0.3)]"
           variants={eagleVariants}
@@ -188,7 +188,7 @@ const AnimatedNavbar: React.FC = () => {
         
         {/* Third Eagle */}
         <motion.img
-          src="/staging-site/eagle.svg"
+          src="/eagle.svg"
           alt="Flying Eagle"
           className="absolute w-8 h-8 filter drop-shadow-[0_0_6px_rgba(243,179,51,0.3)]"
           variants={{
@@ -230,7 +230,7 @@ const AnimatedNavbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <motion.a
-            href="/staging-site"
+            href="/"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className={`${cinzel.className} relative group flex items-center gap-3`}

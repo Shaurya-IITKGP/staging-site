@@ -27,16 +27,16 @@ const Footer = () => {
             <p className="text-3xl flex justify-center font-bold mb-4 text-[#D4A76A] pt-6 xl:pt-0 font-serif">Follow Us</p>
             <div className="flex justify-center gap-7 mt-4">
               <a href="https://www.facebook.com/share/HFLKcLA25psDVxjR/?mibextid=qi2Omg/">
-                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/staging-site/facebook.png" alt="Facebook" />
+                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/facebook.png" alt="Facebook" />
               </a>
               <a href="https://www.instagram.com/shaurya.iitkgp?igsh=MW1wcGRqNHoyNWgzcA==">
-                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/staging-site/instagram.png" alt="Instagram" />
+                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/instagram.png" alt="Instagram" />
               </a>
               <a href="https://youtube.com/@shauryaiitkharagpur?si=k3lk4kX4b3kLvZpG">
-                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/staging-site/youtube.png" alt="YouTube" />
+                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/youtube.png" alt="YouTube" />
               </a>
               <a href="https://www.linkedin.com/company/shaurya-iit-kharagpur/">
-                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/staging-site/linkedin.png" alt="LinkedIn" />
+                <Image width={30} height={30} className="w-[30px] h-[30px] hover:scale-110 transition" src="/linkedin.png" alt="LinkedIn" />
               </a>
             </div>
 
