@@ -14,7 +14,7 @@ const Footer = () => {
             {/* Contact Information */}
             <div className=''>
               <div className="flex justify-center">
-            <Image width={200} height={200} className="w-[150px] lg:w-[200px]  " src="/staging-site/Shaurya_Logo.png" alt="Shaurya Logo" /></div>
+            <Image width={200} height={200} className="w-[150px] lg:w-[200px]  " src="/Shaurya_Logo.png" alt="Shaurya Logo" /></div>
               <p className="flex justify-center text-[15px] mt-4 lg:mt-0 text-white font-bold font-nunito text-center lg:text-left w-[90%]">
                 <span className="text-center text-[#D4A76A]  font-serif">Shaurya is not just a sports fest; 
                 its a vibrant celebration of athleticism and camaraderie,
