@@ -14,7 +14,7 @@ export default function ComingSoon() {
       </div>
       <div className="fixed inset-0">
         <Image
-          src="/staging-site/image.png"
+          src="/image.png"
           alt="Background"
           fill
           className="opacity-30 object-cover"

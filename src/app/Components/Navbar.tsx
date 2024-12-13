@@ -161,7 +161,7 @@ const AnimatedNavbar: React.FC = () => {
         {/* First Eagle */}
         <motion.div className="absolute w-16 h-16">
           <Image
-            src="/staging-site/eagle.svg"
+            src="/eagle.svg"
             alt="Flying Eagle"
             width={64}
             height={64}
@@ -216,7 +216,7 @@ const AnimatedNavbar: React.FC = () => {
       {/* Decorative background elements */}
       <div className="absolute inset-0">
         <Image
-          src="/staging-site/mainPage.png"
+          src="/mainPage.png"
           alt="Background"
           layout="fill"
           objectFit="cover"
@@ -238,7 +238,7 @@ const AnimatedNavbar: React.FC = () => {
             {/* Logo Container */}
             <div className="relative w-32 h-32 overflow-hidden transform transition-transform duration-300">
               <Image
-                src="/staging-site/Shaurya_Logo.png"
+                src="/Shaurya_Logo.png"
                 alt="Shaurya Logo"
                 width={128}
                 height={128}
