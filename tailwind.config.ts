@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '540px',
+      },
       backgroundImage: {
         bannerImg: "url('/background.jpg')",
         'warrior-texture': "url('/warrior-texture.png')",
