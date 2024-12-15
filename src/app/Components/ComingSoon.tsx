@@ -29,7 +29,7 @@ export default function ComingSoon() {
            
          </div>
 
-         <div className="w-full mt-40">
+         <div className="w-full">
              <Animate />
            </div>
        </div>

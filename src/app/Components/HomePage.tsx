@@ -52,14 +52,14 @@ export default function MainPage() {
         <div className="z-20 flex flex-col md:justify-center md:items-center md:mt-0 mt-60 w-full">
           <div className="relative">
             <Image
-              src="/shaurya_dark_brown-removebg-preview.png"
+              src="/Shaurya_Title_20255.png"
               alt="Shaurya Logo"
               width={700}
               height={200}
-              className="w-[700px] h-auto object-contain items-center logo-glow"
+              className="w-[700px] h-auto object-contain items-center mt-64 filter logo-glow"
             />
           </div>
-          <div className="relative">
+          <div className="relative mt-48 mb-32">
             <Animate />
           </div>
         </div>
