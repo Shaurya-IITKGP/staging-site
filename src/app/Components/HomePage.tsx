@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Animate from "./animate";
 import Image from "next/image";
+import Competitions from "./competition";
+import AnimatedNavbar from "./Navbar";
 
 export default function MainPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -62,7 +64,12 @@ export default function MainPage() {
           <div className="relative mt-48 mb-32">
             <Animate />
           </div>
+      
         </div>
+
+
+       
+        <Competitions/>
       </div>
       <Footer />
     </>
