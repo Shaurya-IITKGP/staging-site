@@ -5,6 +5,7 @@ import Animate from "./animate";
 import Image from "next/image";
 import Competitions from "./competition";
 import AnimatedNavbar from "./Navbar";
+import Esports from "./esports";
 
 export default function MainPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -70,6 +71,8 @@ export default function MainPage() {
 
        
         <Competitions/>
+
+        <Esports/>
       </div>
       <Footer />
     </>
