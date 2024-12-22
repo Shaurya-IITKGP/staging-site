@@ -41,7 +41,7 @@ const navItems = [
   },
   { 
     name: "Sponsors", 
-    href: "/sponsors", 
+    href: "/newPag", 
     color: "from-orange-500 to-yellow-500",
     glow: "orange-500",
     icon: "👑"

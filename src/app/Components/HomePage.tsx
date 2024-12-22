@@ -37,7 +37,7 @@ export default function MainPage() {
     <>
       <div className="min-h-screen relative bg-cover bg-center flex flex-col overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80 h-full"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity- h-full"></div>
         <div className="fixed inset-0 z-0">
           <Image
             src="/mainPage2.jpg"

@@ -3,6 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AnimatedNavbar from "./Components/Navbar";
 
+import { Poppins } from 'next/font/google';
+import MainNavBar from "./Components/MainNavBar";
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], // आवश्यक वजन
+});
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -38,9 +46,10 @@ export default function RootLayout({
       </head>
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
       >
-        <AnimatedNavbar/>
+        {/* <AnimatedNavbar/> */}
+        <MainNavBar/>
         {children}
       </body>
     </html>
