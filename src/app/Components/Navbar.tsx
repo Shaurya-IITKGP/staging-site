@@ -215,15 +215,16 @@ const AnimatedNavbar: React.FC = () => {
 
       {/* Decorative background elements */}
       <div className="absolute inset-0">
-        <Image
-          src="/mainPage.png"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-40"
-          unoptimized
-        />
-      </div>
+      <Image
+    src="/mainPage.png"
+    alt="Background"
+    layout="fill"
+    objectFit="cover"
+    objectPosition="top"
+    className="opacity-40 bg-cover"
+    unoptimized
+  />
+  </div>
       <div className="absolute inset-0 bg-gradient-to-r from-darkOrange/10 via-transparent to-darkOrange/10" />
 
       <div className="container mx-auto px-8 py-3">
