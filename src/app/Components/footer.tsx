@@ -69,7 +69,7 @@ const Footer = () => {
                 <h4 className="text-[#D4A76A] font-semibold">Hemant Kamble</h4>
                 <ul className="space-y-1">
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
-                    <a href="tel:+917667103747">9372838349</a>
+                    <a href="tel:+917667103747">+91 9372838349</a>
                   </li>
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A] text-sm">
                     <a href="mailto:aryanraj.shaurya.iitkgp@gmail.com">
