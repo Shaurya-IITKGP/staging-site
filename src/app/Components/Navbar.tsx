@@ -19,7 +19,7 @@ const rajdhani = Rajdhani({
 // Navigation items
 const navItems = [
   { 
-    name: "About-Us", 
+    name: "About", 
     href: "/about", 
     color: "from-lightOrange to-darkOrange",
     glow: "lightOrange",
@@ -55,7 +55,7 @@ const navItems = [
   },
 
   { 
-    name: "CA-Portal", 
+    name: "CA", 
     href: "https://ca.shauryaiitkgp.in/", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
@@ -237,7 +237,7 @@ const AnimatedNavbar: React.FC = () => {
             className={`${cinzel.className} relative group flex items-center gap-3`}
           >
             {/* Logo Container */}
-            <div className="relative w-32 h-32 overflow-hidden transform transition-transform duration-300">
+            <div className="relative w-32 h-32 transform transition-transform duration-300">
               <Image
                 src="/Shaurya_Logo.png"
                 alt="Shaurya Logo"
