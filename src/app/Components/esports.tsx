@@ -12,12 +12,9 @@ const EsportsPage = () => {
 
             <div className="relative h-full w-full grid grid-cols-12 grid-rows-12 gap-0">
                
-                <div className="col-span-12 row-span-12 w-full h-full">
-                    {/* Content of div1 */}
-                    Div 1
-                </div>
+                
 
-                {/* div2 takes a 5x5 grid area */}
+              
                 <div className="col-start-1 row-start-1 col-span-5 row-span-5 w-full h-full object-contain" style={{ transform: 'scale(0.5)', transformOrigin: 'top left' }}>
   <Esports />
 </div>
