@@ -14,9 +14,10 @@
 }
 
 .container.grid, .container.columns {
-    align-content: stretch;
+    align-content:stretch;
     align-items: stretch;
     flex-wrap: wrap;
+    height: 60%;
 }
 
 .letter {
@@ -59,21 +60,33 @@
     display: block;
 }
 
-.F {
-    background: var(--color-blue);
+/* .E {
+    background: #6B4423; 
+   opacity: 0.3;
 }
 
-.l {
-    background: var(--color-pink);
+
+.S {
+    background: #8B6B43; 
 }
 
-.i {
-    background: var(--color-ui-blue-lt);
+.P {
+    background: #755C3B; 
 }
 
-.p {
-    background: var(--color-ui-blue);
+.O {
+    background: #694D3B;  
 }
+
+.R {
+    background: #825D38;  
+}
+
+.T {
+    background: #7A4F2C;  
+}
+
+ */
 
 .container.plain .letter {
     background: transparent;

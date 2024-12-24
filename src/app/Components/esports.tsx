@@ -1,61 +1,37 @@
-import React, { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import {Flip} from "gsap/Flip"
-import './esports.css';
+import Esports from "./esportsAnimation"
 
-gsap.registerPlugin(Flip);
 
-const Esports = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    let layouts = [ "final","plain","columns"] ;
-    let curLayout = 0 ;
-
-    // React.useEffect(() => {
-    //     const interval = setInterval(nextState, 2000);
-        
-    //     return () => clearInterval(interval);
-    // }, []);
-
-    function nextState() {
-        const container = containerRef.current;
-        if (!container) return;
-
-        const state = Flip.getState(container.querySelectorAll(".letter, .for, .gsap"), {
-            props: "color", 
-            // simple: true
-        }); 
-        container.classList.remove(layouts[curLayout]);
-        curLayout = (curLayout + 1) % layouts.length;
-        container.classList.add(layouts[curLayout]); 
-    
-        Flip.from(state,{
-          
-            stagger:0.07,
-            duration:0.7,
-            ease: "power2.inOut",
-            spin: curLayout === 0,
-            simple:true,
-            onLeave: elements => gsap.to(elements, {opacity: 0}),
-            onEnter: (elements) => gsap.fromTo(elements, {opacity: 0}, {opacity: 1, delay:1}),
-        });
-    }
-
+const EsportsPage = () => {
     return (
-        <div className="h-screen w-screen flex items-center justify-center overflow-hidden m-0 p-0">
-            <div ref={containerRef} className="container columns w-screen h-full m-0 p-0">
-                <div className="letter F">F</div>
-                <div className="letter l">L</div>
-                <div className="letter i">I</div>
-                <div className="letter p">P</div>
-                <div className="for">for</div>
-                <div className="gsap">GSAP</div>
+        <div className="h-screen w-full relative">
+            <img
+                 src="/staging-site/Esports_bg2.jpg"
+                 alt="Esports background"
+                 className="absolute inset-0 w-full h-full object-cover -z-10"
+               />
+
+            <div className="relative h-full w-full grid grid-cols-12 grid-rows-12 gap-0">
+               
+                <div className="col-span-12 row-span-12 w-full h-full">
+                    {/* Content of div1 */}
+                    Div 1
+                </div>
+
+                {/* div2 takes a 5x5 grid area */}
+                <div className="col-start-1 row-start-1 col-span-5 row-span-5 w-full h-full object-contain" style={{ transform: 'scale(0.5)', transformOrigin: 'top left' }}>
+  <Esports />
+</div>
+
+
+                {/* div3 takes a 2x1 grid area */}
+                <div className="col-start-10 col-span-2 row-start-10 row-span-1 w-full h-full">
+                <button className="before:ease relative h-12 w-40 overflow-hidden border border-yellow-800 bg-yellow-700 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-yellow-800 hover:before:-translate-x-40">
+      <span className="relative z-10 font-mono">Register Now</span>
+    </button>
+                </div>
             </div>
-          
-            
-           
-        </div>
+            </div>
+        
     )
 }
-
-export default Esports;
+export default EsportsPage
