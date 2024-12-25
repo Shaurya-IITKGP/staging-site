@@ -5,6 +5,8 @@ import MainNavBar from '../Components/MainNavBar';
 import Image from 'next/image';
 import Footer from '../Components/footer';
 import Animate from '../Components/animate';
+import Competitions from '../Components/competition';
+import About from '../Components/about';
 
 const page = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -68,6 +70,13 @@ const page = () => {
             <Animate />
           </div>
         </div>
+      </div>
+      <div className='h-screen'>
+        <About/>
+
+      </div>
+      <div className=''>
+        <Competitions/>
       </div>
 
       {/* Footer */}

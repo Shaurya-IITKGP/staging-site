@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const NewNavbar = () => {
   const [isScrollingDown, setIsScrollingDown] = useState(false)
@@ -32,7 +33,7 @@ const NewNavbar = () => {
         <div className="container mx-auto flex items-center justify-between px-6 navbar">
           {/* Left Items */}
           <div className="flex space-x-12 font-bold text-yellow-200">
-            <a href="#home" className="hover:text-gray-400">ABOUT</a>
+            <a href="/esports" className="hover:text-gray-400">ESPORTS</a>
             <a href="#about" className="hover:text-gray-400">EVENTS</a>
             <a href="#services" className="hover:text-gray-400">GALLERY</a>
           </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Page = () => {
+const About = () => {
   return (
     <div className="">
       {/* Background image with gradient overlay */}
-      <div className="fixed inset-0 z-0">
+      {/* <div className="fixed inset-0 z-0">
         <Image
           src="/mainPage2.jpg"
           alt="Background"
@@ -14,7 +14,7 @@ const Page = () => {
           className="opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-50"></div>
-      </div>
+      </div> */}
       
       <div className="relative z-10">
         {/* Heading */}
@@ -27,7 +27,7 @@ const Page = () => {
           {/* YouTube video thumbnail with YouTube logo in the center */}
           <div className="w-1/4 relative shadow-lg shadow-black rounded-md">
             <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://youtu.be/ulk1aol4IL0?si=XG1smyb7HTY5efYK"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -102,4 +102,4 @@ const Page = () => {
   )
 }
 
-export default Page;
+export default About;
