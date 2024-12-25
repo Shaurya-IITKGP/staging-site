@@ -49,7 +49,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
       >
         {/* <AnimatedNavbar/> */}
-        <MainNavBar/>
+        {/* <MainNavBar/> */}
         {children}
       </body>
     </html>

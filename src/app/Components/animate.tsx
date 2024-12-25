@@ -6,17 +6,29 @@ import gsap from "gsap";
 
 const Animate = () =>{
     const text = [
-        { text: 'C' },
-        { text: 'O' },
-        { text: 'M' },
+        { text: 'R' },
         { text: 'I' },
-        { text: 'N' },
-        { text: 'G' },
-        { text: ' ' }, // adding space between words
         { text: 'S' },
+        { text: 'E' },
+        { text: 'A' },
+        { text: 'B' }, // adding space between words
         { text: 'O' },
-        { text: 'O' },
-        { text: 'N' }
+        { text: 'V' },
+        { text: 'E' },
+        { text: ' ' },
+        { text: 'S' },
+        { text: 'H' },
+        { text: 'A' },
+        { text: 'U' },
+        { text: 'R' },
+        { text: 'Y' },
+        { text: 'A' }
+
+
+
+
+
+,
     ];
     const container = useRef(null);
 
@@ -35,12 +47,12 @@ const Animate = () =>{
     },{scope:container});
 
     return(
-        <div ref={container} className="flex justify-center items-center min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 mb-6">
+        <div ref={container} className="flex justify-center  min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
             <div className="flex flex-wrap justify-center gap-2">
-                {text.slice(0,6).map((item, index) => (
+                {text.slice(0,4).map((item, index) => (
                     <span 
                         key={index} 
-                        className="ancient-letter text-4xl md:text-6xl font-serif
+                        className="ancient-letter text-xl md:text-xl font-serif
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
                         font-bold tracking-wider"
                         style={{
@@ -53,10 +65,10 @@ const Animate = () =>{
                 ))}
             </div>
             <div className="flex flex-wrap justify-center gap-2">
-                {text.slice(6).map((item, index) => (
+                {text.slice(4).map((item, index) => (
                     <span 
                         key={index} 
-                        className="ancient-letter text-4xl md:text-6xl font-serif
+                        className="ancient-letter text-4xl md:text-xl font-serif
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
                         font-bold tracking-wider"
                         style={{
@@ -68,6 +80,7 @@ const Animate = () =>{
                     </span>
                 ))}
             </div>
+           
         </div>
     )
 }
