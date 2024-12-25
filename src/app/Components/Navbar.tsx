@@ -19,7 +19,7 @@ const rajdhani = Rajdhani({
 // Navigation items
 const navItems = [
   { 
-    name: "About-Us", 
+    name: "About", 
     href: "/about", 
     color: "from-lightOrange to-darkOrange",
     glow: "lightOrange",
@@ -55,7 +55,7 @@ const navItems = [
   },
 
   { 
-    name: "CA-Portal", 
+    name: "CA", 
     href: "https://ca.shauryaiitkgp.in/", 
     color: "from-yellow-500 to-amber-500",
     glow: "yellow-500",
@@ -209,11 +209,123 @@ const AnimatedNavbar: React.FC = () => {
                   ease: "linear",
                 }
               }
-            }}
-            initial="initial"
-            animate="animate"
-            style={{ top: '60%' }}
-          />
+
+            }
+          }}
+          initial="initial"
+          animate="animate"
+          style={{ top: '60%' }}
+        />
+
+        {/* Render Eagle Trails */}
+        {trails.map(trail => (
+          <EagleTrail key={trail.id} x={trail.x} y={trail.y} />
+        ))}
+      </div>
+
+      {/* Decorative background elements */}
+      <div className="absolute inset-0">
+      <Image
+    src="/mainPage.png"
+    alt="Background"
+    layout="fill"
+    objectFit="cover"
+    objectPosition="top"
+    className="opacity-40 bg-cover"
+    unoptimized
+  />
+  </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-darkOrange/10 via-transparent to-darkOrange/10" />
+
+      <div className="container mx-auto px-8 py-3">
+        <div className="flex justify-between items-center">
+          {/* Logo Section */}
+          <motion.a
+            href="/"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className={`${cinzel.className} relative group flex items-center gap-3`}
+          >
+            {/* Logo Container */}
+            <div className="relative w-32 h-32 transform transition-transform duration-300">
+              <Image
+                src="/Shaurya_Logo.png"
+                alt="Shaurya Logo"
+                width={128}
+                height={128}
+                className="w-full h-full object-contain transform scale-110 transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 border-2 border-lightOrange/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute -inset-2 bg-gradient-to-r from-darkOrange/20 to-lightOrange/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
+            </div>
+            
+            {/* Title Section */}
+            {/* <div className="flex flex-col items-start">
+              <span className="text-4xl font-bold bg-gradient-to-r from-lightOrange to-darkOrange bg-clip-text text-transparent">
+                SHAURYA
+              </span>
+              <span className="text-xl font-semibold text-lightOrange">2024-25</span>
+              <span className="text-lg text-lightOrange/90 font-cinzel tracking-wider">
+                Veerashwa Kshetra
+              </span>
+            </div> */}
+          </motion.a>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-6">
+            {navItems.map((item, index) => (
+              <motion.a
+                key={item.name}
+                href={item.href}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`${rajdhani.className} relative group px-6 py-3
+                  text-lg font-semibold tracking-wide transition-all duration-300
+                  border border-lightOrange/30 rounded-lg 
+                  bg-gradient-to-b from-black/60 to-black/40
+                  hover:border-lightOrange/50
+                  overflow-hidden`}
+                  onClick={() => {
+                    setIsMenuOpen(false); // Close the menu
+                    const router = useRouter();
+                    router.push(item.href); // Use `router.push` to navigate
+                  }}
+              >
+                {/* Content wrapper */}
+                <div className="relative z-10 flex flex-col items-center gap-1.5">
+                  <span className="text-2xl transform group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </span>
+                  <span className="text-white/90 group-hover:text-white font-bold tracking-wider">
+                    {item.name}
+                  </span>
+                  {/* <span className="text-sm text-lightOrange/80 group-hover:text-lightOrange">
+                    {item.sanskrit}
+                  </span> */}
+                </div>
+
+                {/* Continuous sword slash effect */}
+                <div className="absolute inset-0 w-full h-full overflow-hidden">
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
+                    <div className="w-full h-full bg-gradient-to-r from-transparent via-lightOrange/30 to-transparent
+                      group-hover:animate-sword-slash" />
+                  </div>
+                </div>
+
+                {/* Corner accents */}
+                <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-lightOrange/50 
+                  transition-all duration-300 group-hover:w-4 group-hover:h-4 group-hover:border-lightOrange" />
+                <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-lightOrange/50 
+                  transition-all duration-300 group-hover:w-4 group-hover:h-4 group-hover:border-lightOrange" />
+                <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-lightOrange/50 
+                  transition-all duration-300 group-hover:w-4 group-hover:h-4 group-hover:border-lightOrange" />
+                <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-lightOrange/50 
+                  transition-all duration-300 group-hover:w-4 group-hover:h-4 group-hover:border-lightOrange" />
+              </motion.a>
+            ))}
+          </div>
+
 
           {/* Render Eagle Trails */}
           {trails.map(trail => (
