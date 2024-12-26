@@ -10,6 +10,22 @@ const config: Config = {
     extend: {
       screens: {
         xs: '540px',
+        'b1': {'min': '1100px'},
+        'b2': {'min': '961px', 'max' :'1099px'},
+        'b3': {'max': '960px'},
+        'b4': {'min': '961px'},
+        'b5': {'min': '650px', 'max' :'760px'},
+        'b6': {'max': '650px'},
+        'b7': {'min': '650px'},
+      },
+      clipPath: {
+        'circle': 'circle(50%)',
+        'polygon': 'polygon(50% 0%, 100% 100%, 0% 100%)',
+        'ellipse1': 'ellipse(80% 100px at top center)',
+        'ellipse2': 'ellipse(80% 100px at bottom center)',
+      },
+      translate: {
+        '128': '32rem',
       },
       backgroundImage: {
         bannerImg: "url('/background.jpg')",
@@ -61,7 +77,24 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }:any) {
+      addUtilities({
+        '.clip-circle': {
+          'clip-path': 'circle(50%)',
+        },
+        '.clip-polygon': {
+          'clip-path': 'polygon(50% 0%, 100% 100%, 0% 100%)',
+        },
+        '.clip-ellipse1':{
+          'clip-path': 'ellipse(400px 100% at top center)',
+        },
+        '.clip-ellipse2':{
+          'clip-path': 'ellipse(400px 100% at bottom center)',
+        },
+      });
+    },
+  ],
 };
 
 export default config;

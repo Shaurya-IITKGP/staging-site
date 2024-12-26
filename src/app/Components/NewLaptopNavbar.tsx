@@ -34,8 +34,8 @@ const NewNavbar = () => {
           {/* Left Items */}
           <div className="flex space-x-12 font-bold text-yellow-200">
             <a href="/esports" className="hover:text-gray-400">ESPORTS</a>
-            <a href="#about" className="hover:text-gray-400">EVENTS</a>
-            <a href="#services" className="hover:text-gray-400">GALLERY</a>
+            <a href="/events" className="hover:text-gray-400">EVENTS</a>
+            <a href="/gallery" className="hover:text-gray-400">GALLERY</a>
           </div>
 
           {/* Logo */}
