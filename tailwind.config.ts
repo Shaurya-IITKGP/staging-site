@@ -17,6 +17,9 @@ const config: Config = {
         'b5': {'min': '650px', 'max' :'760px'},
         'b6': {'max': '650px'},
         'b7': {'min': '650px'},
+        'k1': '1250px',    
+        'k2': '900px',
+        'k3': '310px'
       },
       clipPath: {
         'circle': 'circle(50%)',

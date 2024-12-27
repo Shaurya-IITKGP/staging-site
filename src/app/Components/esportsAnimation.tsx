@@ -15,7 +15,7 @@ const Esports = () => {
     let curLayout = 0 ;
 
     React.useEffect(() => {
-        const interval = setInterval(nextState, 5000);
+        const interval = setInterval(nextState, 2000);
         
         return () => clearInterval(interval);
     }, []);
@@ -35,7 +35,7 @@ const Esports = () => {
         Flip.from(state,{
           
             stagger:0.07,
-            duration:1.3,
+            duration:0.8,
             ease: "power2.inOut",
             spin: curLayout === 0,
             simple:true,

@@ -52,7 +52,7 @@ const NewNavbar = () => {
           {/* Right Items */}
           <div className="flex space-x-12 rounded-full font-bold text-yellow-200">
             <a href="#contact" className="hover:text-gray-400">SPONSORS</a>
-            <a href="#blog" className="hover:text-gray-400">TEAMS</a>
+            <a href="/teams" className="hover:text-gray-400">TEAMS</a>
             <a href="#help" className="hover:text-gray-400">CA</a>
           </div>
         </div>
