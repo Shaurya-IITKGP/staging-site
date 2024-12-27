@@ -31,7 +31,7 @@ const page = () => {
             <span className="relative z-10 font-mono">Register Now</span>
           </button>
         </div>
-      </div>+
+      </div>
     </div>
   );
 };
