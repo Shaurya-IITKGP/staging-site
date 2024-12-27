@@ -3,29 +3,17 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className="">
-      {/* Background image with gradient overlay */}
-      {/* <div className="fixed inset-0 z-0">
-        <Image
-          src="/mainPage2.jpg"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-50"></div>
-      </div> */}
-      
+    <div className="">    
       <div className="relative z-10">
         {/* Heading */}
-        <h1 className="text-6xl text-center font-bold text-amber-900 mb-8 font-['Cinzel']">
+        <h1 className="text-6xl text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">
           About Us
         </h1>
         
         {/* Content section */}
         <div className="flex justify-evenly items-center space-x-8">
           {/* YouTube video thumbnail with YouTube logo in the center */}
-          <div className="w-1/4 relative shadow-lg shadow-black rounded-md">
+          <div className="w-1/4 relative shadow-lg shadow-yellow-500 rounded-md">
             <a
               href="https://youtu.be/ulk1aol4IL0?si=XG1smyb7HTY5efYK"
               target="_blank"
@@ -53,8 +41,8 @@ const About = () => {
           </div>
 
           {/* Text content */}
-          <div className="w-2/3 text-white">
-            Shaurya is not just a sports fest; 
+          <div className="w-1/2 text-white">
+            <span className='text-yellow-500 font-bold'>Shaurya </span>is not just a sports fest; 
             it's a vibrant celebration of athleticism and camaraderie,
             where the spirit of competition ignites passion and unity among colleges nationwide.
             Join us to witness the thrill of sports as we elevate the game together!
@@ -63,40 +51,37 @@ const About = () => {
       </div>
 
       <div className='flex justify-center mt-20 text-2xl'>
-  <table className='w-full'>
+  <table className='w-full '>
     <tbody>
-      <tr>
+      <tr className='font-bold text-yellow-400'>
         <td className="px-4 py-2 text-center">100K+</td>
         <td className="px-4 py-2 text-center">10M+</td>
         <td className="px-4 py-2 text-center">3</td>
       </tr>
+      
       <tr>
         <td className="px-4 py-2 text-center">FootFalls</td>
         <td className="px-4 py-2 text-center">EyeBalls</td>
         <td className="px-4 py-2 text-center">Days</td>
       </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div className='flex justify-center mt-8 text-2xl'>
-  <table className='w-full'>
-    <tbody>
       <tr>
-        <td className="px-4 py-2 text-center">100K+</td>
-        <td className="px-4 py-2 text-center">10M+</td>
-        <td className="px-4 py-2 text-center">3</td>
+        <td className="px-4 py-2 text-center"></td>
+        <td className="px-4 py-2 text-center"></td>
+        <td className="px-4 py-2 text-center"></td>
+      </tr>
+      <tr className=' font-bold text-yellow-400'>
+        <td className="px-4 py-2 text-center">450+</td>
+        <td className="px-4 py-2 text-center">4500+</td>
+        <td className="px-4 py-2 text-center">75+</td>
       </tr>
       <tr>
-        <td className="px-4 py-2 text-center">FootFalls</td>
-        <td className="px-4 py-2 text-center">EyeBalls</td>
-        <td className="px-4 py-2 text-center">Days</td>
+        <td className="px-4 py-2 text-center">Colleges</td>
+        <td className="px-4 py-2 text-center">Participants</td>
+        <td className="px-4 py-2 text-center">Events</td>
       </tr>
     </tbody>
   </table>
 </div>
-
 
     </div>
   )

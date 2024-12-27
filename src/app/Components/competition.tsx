@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,17 +56,19 @@ const Competitions = () => {
                         <section className="panel flex-shrink-0 w-[80%] h-[75vh] bg-gradient-to-br from-yellow-300/20 to-orange-200/30 p-8 snap-center rounded-xl shadow-lg m-4 border-2 border-yellow-200/60 backdrop-blur-sm">
                             <div className="flex h-full gap-8">
                                 <div className="w-1/2 h-full">
-                                    <img 
-                                        src="staging-site/run.png" 
+                                    <Image
+                                       height={100}
+                                       width={100}
+                                        src="/run.png" 
                                         alt="Ancient Indian Archer"
                                         className="w-full h-full object-cover rounded-lg shadow-xl"
                                     />
                                 </div>
-                                <div className="w-1/2 flex flex-col justify-center">
-                                    <h2 className="text-4xl font-['Cinzel'] text-[#8B4513] mb-8 font-bold tracking-wide text-center -mt-8">
+                                <div className="w-1/2 flex flex-col mt-4">
+                                    <h2 className="text-4xl  text-yellow-400 mb-8 font-bold tracking-wide text-center -mt-8">
                                         Dhanurvidya
                                     </h2>
-                                    <p className="text-[#654321] text-lg leading-relaxed font-['Crimson_Text'] tracking-wide">
+                                    <p className="text-white font-bold text-lg leading-relaxed tracking-wide">
                                         Master the ancient art of archery, as practiced by the legendary warriors of Hastinapur. 
                                         Test your precision and focus in this traditional competition that echoes the teachings 
                                         of Dronacharya himself.
@@ -77,15 +80,17 @@ const Competitions = () => {
                         <section className="panel flex-shrink-0 w-[80%] h-[75vh] bg-amber-50/30 p-8 snap-center rounded-xl shadow-lg m-4 border-2 border-amber-100/50 backdrop-blur-sm">
                             <div className="flex h-full gap-8">
                                 <div className="w-1/2 h-full">
-                                    <img 
-                                        src="/images/sword-fighting.jpg" 
+                                    <Image 
+                                    height={100}
+                                    width={100}
+                                        src="/EsportsEvent.png" 
                                         alt="Sword Fighting Warriors"
                                         className="w-full h-full object-cover rounded-lg shadow-xl"
                                     />
                                 </div>
-                                <div className="w-1/2 flex flex-col justify-center">
-                                    <h2 className="text-4xl font-['Cinzel'] text-amber-900 mb-4">Khaḍgavidya</h2>
-                                    <p className="text-amber-800/80 text-lg leading-relaxed">
+                                <div className="w-1/2 flex flex-col ">
+                                    <h2 className="text-4xl text-yellow-500 font-bold mb-4">Khaḍgavidya</h2>
+                                    <p className="text-white font-bold text-lg leading-relaxed">
                                         Embrace the way of the sword in this intense display of skill and strategy. 
                                         Channel the spirit of the Rajput warriors as you demonstrate your mastery 
                                         of this noble martial art.

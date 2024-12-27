@@ -1,12 +1,14 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import NewNavbar from '../Components/NewLaptopNavbar';
-import MainNavBar from '../Components/MainNavBar';
-import Image from 'next/image';
-import Footer from '../Components/footer';
-import Animate from '../Components/animate';
-import Competitions from '../Components/competition';
-import About from '../Components/about';
+"use client";
+import React, { useState, useEffect } from "react";
+import Lottie from "react-lottie-player";
+import eagleAnimation from "../../../public/eagleAnimation.json"; // Add your Lottie JSON file
+import NewNavbar from "../Components/NewLaptopNavbar";
+import MainNavBar from "../Components/MainNavBar";
+import Image from "next/image";
+import Footer from "../Components/footer";
+import Animate from "../Components/animate";
+import Competitions from "../Components/competition";
+import About from "../Components/about";
 
 const page = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -14,72 +16,67 @@ const page = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the page is scrolling down or up
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         setShowNavbar(false);
       } else {
-        // Scrolling up
         setShowNavbar(true);
       }
-      // Update the last scroll position
       setLastScrollY(window.scrollY);
     };
 
-    // Add event listener for scroll
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on unmount
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
 
   return (
     <div>
       <div className="h-screen relative">
-        {/* Background Gradient */}
+        <div className="bg-black z-40 bg-opacity-65 ">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black h-full"></div>
-
-        {/* Background Image */}
         <div className="fixed inset-0 z-0">
           <Image
-            src="/mainPage2.jpg"
+            src="/mainPage5.png"
             alt="Background"
             layout="fill"
             objectFit="cover"
             className="opacity-30"
           />
         </div>
-
-        {/* Main Navigation Bar */}
-        {/* <div className={`transition-all duration-300 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
-          <MainNavBar />
-        </div> */}
-
-        {/* Logo and Animation */}
         <div className="z-20 flex flex-col md:justify-center md:items-start items-center md:mt-0 mt-60 w-full">
-          <div className="relative">
-            <Image
-              src="/Shaurya_Title_20255.png"
-              alt="Shaurya Logo"
-              width={600}
-              height={150}
-              className="w-[700px] h-auto object-contain items-center mt-64 filter logo-glow"
-            />
-            <Animate />
+          <div className="flex">
+            <div className="relative">
+              <Image
+                src="/Shaurya_Title_20255.png"
+                alt="Shaurya Logo"
+                width={600}
+                height={150}
+                className="w-[700px] h-auto object-contain items-center mt-64 filter logo-glow"
+              />
+              <Animate />
+            </div>
+            <div className="z-20 flex justify-center items-center">
+              <div className="w-[600px]">
+              <Lottie
+  loop
+  rev="true"
+  animationData={eagleAnimation}
+  play
+  style={{ width: 1200, height: 600 }}
+/>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
       </div>
-      <div className='h-screen'>
-        <About/>
-
+      <div className="h-screen">
+        <About />
       </div>
-      <div className=''>
-        <Competitions/>
+      <div>
+        <Competitions />
       </div>
-
-      {/* Footer */}
       <Footer />
     </div>
   );
