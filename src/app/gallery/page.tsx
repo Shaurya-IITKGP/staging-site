@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import './home.css';
+import Image from "next/image";
 
 
 function Home(){
@@ -50,10 +51,9 @@ function Home(){
         <div className="list">
           {/* Adjusting the transition and background change */}
           <div className="item w-full h-full absolute inset-0">
-            <div
-              className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}
-              style={{ backgroundImage: `url(${image[0]})` }}
-            ></div>
+            <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
+              <Image src={image[0]} alt="Slide Image 1" layout="fill" objectFit="cover" />
+            </div>
             <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
               <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
                 LUNDEV
@@ -67,68 +67,72 @@ function Home(){
               <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit...
               </div>
-              <div className="buttons grid grid-cols-[repeat(2,130px)] grid-rows-[40px] gap-[5px] mt-[20px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.8s] !important">
-              </div>
             </div>
           </div>
+
+          {/* Slide 2 */}
           <div className="item w-full h-full absolute inset-0">
-            <div
-              className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}
-              style={{ backgroundImage: `url(${image[1]})` }}
-            ></div>
-            <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
-              <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
-              </div>
-              <div className="title text-[5em] font-bold leading-[1.3em] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.2s] !important">
-              </div>
-              <div className="topic text-[5em] font-bold leading-[1.3em] text-[#f1683a] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.4s] !important">
-              </div>
-              <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
-              </div>
-              <div className="buttons grid grid-cols-[repeat(2,130px)] grid-rows-[40px] gap-[5px] mt-[20px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.8s] !important">
-              </div>
+            <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
+              <Image src={image[1]} alt="Slide Image 2" layout="fill" objectFit="cover" />
             </div>
-          </div>
-          <div className="item w-full h-full absolute inset-0">
-            <div
-              className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}
-              style={{ backgroundImage: `url(${image[2]})` }}
-            ></div>
             <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
               <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
-              </div>
-              <div className="title text-[5em] font-bold leading-[1.3em] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.2s] !important">
-              </div>
-              <div className="topic text-[5em] font-bold leading-[1.3em] text-[#f1683a] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.4s] !important">
-              </div>
-              <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
-              </div>
-              <div className="buttons grid grid-cols-[repeat(2,130px)] grid-rows-[40px] gap-[5px] mt-[20px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.8s] !important">
-              </div>
-            </div>
-          </div>
-          <div className="item w-full h-full absolute inset-0">
-            <div
-              className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}
-              style={{ backgroundImage: `url(${image[3]})` }}
-            ></div>
-            <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
-              <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
-                RUNDEV
+                LUNDEV
               </div>
               <div className="title text-[5em] font-bold leading-[1.3em] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.2s] !important">
                 DESIGN SLIDER
               </div>
               <div className="topic text-[5em] font-bold leading-[1.3em] text-[#f1683a] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.4s] !important">
-                ANIMAL
+                NATURE
               </div>
               <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit...
               </div>
-              <div className="buttons grid grid-cols-[repeat(2,130px)] grid-rows-[40px] gap-[5px] mt-[20px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.8s] !important">
+            </div>
+          </div>
+
+          {/* Slide 3 */}
+          <div className="item w-full h-full absolute inset-0">
+            <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
+              <Image src={image[2]} alt="Slide Image 3" layout="fill" objectFit="cover" />
+            </div>
+            <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
+              <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
+                LUNDEV
+              </div>
+              <div className="title text-[5em] font-bold leading-[1.3em] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.2s] !important">
+                DESIGN SLIDER
+              </div>
+              <div className="topic text-[5em] font-bold leading-[1.3em] text-[#f1683a] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.4s] !important">
+                WILDLIFE
+              </div>
+              <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit...
               </div>
             </div>
           </div>
+
+          {/* Slide 4 */}
+          <div className="item w-full h-full absolute inset-0">
+            <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
+              <Image src={image[3]} alt="Slide Image 4" layout="fill" objectFit="cover" />
+            </div>
+            <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
+              <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
+                LUNDEV
+              </div>
+              <div className="title text-[5em] font-bold leading-[1.3em] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.2s] !important">
+                DESIGN SLIDER
+              </div>
+              <div className="topic text-[5em] font-bold leading-[1.3em] text-[#f1683a] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.4s] !important">
+                SCENERY
+              </div>
+              <div className="des transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards] animate-delay-[1.6s] !important">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit...
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div
