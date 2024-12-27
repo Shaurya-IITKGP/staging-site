@@ -53,9 +53,9 @@ const page = () => {
         </div>
 
         {/* Main Navigation Bar */}
-        <div className={`transition-all duration-300 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
+        {/* <div className={`transition-all duration-300 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
           <MainNavBar />
-        </div>
+        </div> */}
 
         {/* Logo and Animation */}
         <div className="z-20 flex flex-col md:justify-center md:items-start items-center md:mt-0 mt-60 w-full">

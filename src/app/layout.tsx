@@ -8,7 +8,7 @@ import MainNavBar from "./Components/MainNavBar";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '600', '700'], // आवश्यक वजन
+  weight: ['400', '600', '700'],
 });
 
 const geistSans = localFont({
@@ -16,6 +16,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     url: 'https://shauryaiitkgp.in',
     title: "Shaurya IIT KGP",
     description: "Sports Fest Of Indian Institute of Technology Kharagpur"
-},
-}
+  }
+};
 
 export default function RootLayout({
   children,
@@ -44,13 +45,12 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
       </head>
-      
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
       >
-        {/* <AnimatedNavbar/> */}
-        {/* <MainNavBar/> */}
-        {children}
+        <MainNavBar /> {/* Navbar */}
+        {children} {/* Page content */}
       </body>
     </html>
   );
