@@ -15,9 +15,9 @@ const page = () => {
                 
 
               
-                <div className="col-start-1 row-start-1 col-span-5 row-span-5 w-full h-full object-contain" style={{ transform: 'scale(0.5)', transformOrigin: 'top left' }}>
-  <Esports />
-</div>
+                <div className="col-start-1 row-start-1 col-span-5 row-span-5 w-1/2 h-1/2 object-contain" style={{ transform: 'scale(0.5)', transformOrigin: 'top left' }}>
+                  <Esports />
+                </div>
 
 
                 {/* div3 takes a 2x1 grid area */}

@@ -60,9 +60,8 @@
     display: block;
 }
 
-/* .E {
+.E {
     background: #6B4423; 
-   opacity: 0.3;
 }
 
 
@@ -86,7 +85,7 @@
     background: #7A4F2C;  
 }
 
- */
+
 
 .container.plain .letter {
     background: transparent;
