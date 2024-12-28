@@ -7,6 +7,13 @@
     transition: background-image 0.7s ease-in-out;
   }
   
+  .carousel {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to prevent cutting */
+    position: relative; /* Position relative for absolute children */
+}
+
   /* Handle the animation effect when switching images */
   @keyframes effectNext {
     0% {
@@ -26,63 +33,3 @@
     }
   }
   
-  /* Add this to your home.css file */
-
-/* General styles for the carousel */
-.carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .title {
-      font-size: 3em; /* Smaller title font size for mobile */
-  }
-
-  .topic {
-      font-size: 2.5em; /* Smaller topic font size for mobile */
-  }
-
-  .des {
-      font-size: 1em; /* Smaller description font size for mobile */
-  }
-
-  .thumbnail {
-      flex-direction: row; /* Keep thumbnails in a row */
-      overflow-x: auto; /* Allow horizontal scrolling */
-      bottom: 20px; /* Adjust position */
-  }
-
-  .item {
-      width: 100px; /* Smaller width for thumbnails */
-      height: auto; /* Auto height */
-      margin-right: 10px; /* Space between thumbnails */
-  }
-
-  .arrows {
-      top: 90%; /* Adjust arrow position */
-      right: 50%; /* Center arrows */
-      transform: translateX(50%); /* Center arrows */
-  }
-
-  .arrows button {
-      width: 30px; /* Smaller button size */
-      height: 30px; /* Smaller button size */
-  }
-}
-
-@media (max-width: 1024px) {
-  .title {
-      font-size: 4em; /* Adjust title size for tablets */
-  }
-
-  .topic {
-      font-size: 3em; /* Adjust topic size for tablets */
-  }
-
-  .des {
-      font-size: 1.2em; /* Adjust description size for tablets */
-  }
-}
