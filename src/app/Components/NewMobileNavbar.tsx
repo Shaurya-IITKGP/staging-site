@@ -1,4 +1,3 @@
-// staging-site/src/app/newPag/NewMobileNavbar.tsx
 "use client";
 
 import { useState } from "react";
@@ -7,28 +6,28 @@ import Image from 'next/image';
 
 const NewMobileNavbar = () => {
     const navItems = [
-        { name: 'Home', href: '#home', icon: '🏠' },
-        { name: 'About', href: '#about', icon: 'ℹ️' },
-        { name: 'Events', href: '#events', icon: '📅' },
-        { name: 'Gallery', href: '#gallery', icon: '🖼️' },
-        { name: 'Sponsors', href: '#sponsors', icon: '💼' },
-        { name: 'Teams', href: '#teams', icon: '👥' },
-        { name: 'Contact', href: '#contact', icon: '📞' },
+        { name: 'Home', href: '/' },
+        { name: 'Events', href: '/events' },
+        { name: 'Gallery', href: '/gallery' },
+        { name: 'Sponsors', href: '/sponsors' },
+        { name: 'Teams', href: '/teams' },
+        { name: 'Esports', href: '/esports' },
+        { name: 'CA', href: '/ca' },
     ]; // Example nav items
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen); // Toggle menu regardless of width
+        setIsMenuOpen(prev => !prev); // Toggle menu
     };
 
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between fixed z-20 w-screen">
             <div>
-                <Image alt='ShauryaLogo' src='/ShauryaLogo1.png' width={100} height={100} />
+                <Image alt='ShauryaLogo' src='/Shaurya_Logo.png' width={100} height={100} />
             </div>
             {/* Mobile Menu Button */}
-            <div>
+            <div className="mt-4 mr-4">
                 <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -65,10 +64,9 @@ const NewMobileNavbar = () => {
                                     border border-lightOrange/30 hover:border-lightOrange/50 mb-2
                                     bg-gradient-to-b from-black/60 to-black/40
                                     text-white hover:text-white transition-all duration-300`}
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={() => setIsMenuOpen(false)} // Close menu on item click
                             >
                                 <div className="relative z-10 flex items-center gap-2">
-                                    <span className="text-2xl">{item.icon}</span>
                                     <div className="flex flex-col">
                                         <span>{item.name}</span>
                                     </div>

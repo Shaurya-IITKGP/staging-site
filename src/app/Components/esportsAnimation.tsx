@@ -45,9 +45,9 @@ const Esports = () => {
     }
 
     return (
-        <div className="h-screen w-screen flex items-center justify-center overflow-hidden m-0 p-0">
-            <div ref={containerRef} className="container final w-screen h-full m-0 p-0  ">
-            <div className="letter E border-none rounded-3xl">E</div>
+        <div className="h-screen w-screen flex items-center justify-center overflow-hidden m-0 p-0 relative">
+            <div ref={containerRef} className="container final w-screen h-full m-0 p-0 absolute top-0 left-0 z-10">
+                <div className="letter E border-none rounded-3xl">E</div>
                 <div className="letter S border-none rounded-3xl">S</div>
                 <div className="letter P border-none rounded-3xl">P</div>
                 <div className="letter O border-none rounded-3xl">O</div>
@@ -62,12 +62,9 @@ const Esports = () => {
                     width={500}
                     height={500}/>
                 </div>
-                </div>
-          
-            
-           
+            </div>
         </div>
-    )
+    );
 }
 
 export default Esports;

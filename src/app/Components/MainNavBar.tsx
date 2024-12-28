@@ -8,7 +8,7 @@ const MainNavBar = () => {
       // Check the window width and update state
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1138);
+      setIsMobile(window.innerWidth < 768);
     };
 
     // Initial check

@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const NewNavbar = () => {
+    const [isTab,setIsTab] = useState(false);
+        // Check the window width and update state
+    useEffect(() => {
+      const handleResize = () => {
+        setIsTab(window.innerWidth < 1138);
+      };
+  
+      // Initial check
+      handleResize();
+  
+      // Listen for window resize
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup the event listener on unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
   return (
     <div
       className={`text-white fixed top-6 inset-x-0 flex justify-center z-[1000] transition-transform duration-300`}
@@ -11,7 +27,7 @@ const NewNavbar = () => {
       <div className="w-3/5 hidden md:flex justify-center items-center border border-yellow-500 rounded-full h-12 bg-gray-900 bg-opacity-25 text-white shadow-md relative mainNavBar">
         <div className="container mx-auto flex items-center justify-between px-6">
           {/* Left Items */}
-          <div className="flex space-x-12 font-bold text-yellow-400">
+          <div className={`flex  rounded-full font-bold text-yellow-400 ${isTab?"space-x-4 text-xs":"space-x-12"}`}>
             <motion.div
               whileHover={{ rotateX: 10, rotateZ: 5, transition: { duration: 0.3 } }}
               whileTap={{ scale: 0.95 }}
@@ -44,14 +60,14 @@ const NewNavbar = () => {
             <Image
               src="/Shaurya_Logo.png"
               alt="Shaurya Logo"
-              width={200}
-              height={200}
-              className="object-contain logo"
+              width={isTab?200:200}
+              height={isTab?200:200}
+              className="object-contain z-[1000]"
             />
           </Link>
 
           {/* Right Items */}
-          <div className="flex space-x-12 rounded-full font-bold text-yellow-400">
+          <div className={`flex  rounded-full font-bold text-yellow-400 ${isTab?"space-x-4 text-xs":"space-x-12"}`}>
             <motion.div
               whileHover={{ rotateX: 10, rotateZ: 5, transition: { duration: 0.3 } }}
               whileTap={{ scale: 0.95 }}

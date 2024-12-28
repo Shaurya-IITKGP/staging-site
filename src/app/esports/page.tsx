@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="h-screen w-full relative z-0"> {/* Add z-0 here */}
+    <div className="h-screen w-full relative"> {/* Add z-0 here */}
       <Image
         src="/Esports_bg.jpg"
         alt="Background"
@@ -18,12 +18,12 @@ const page = () => {
           className="col-start-1 row-start-1 col-span-5 row-span-5 w-full h-full object-contain"
           style={{ transform: "scale(0.5)", transformOrigin: "top left" }}
         >
-          <Esports />
+          {/* <Esports /> */}
         </div>
 
         <div className="col-start-10 col-span-2 row-start-10 row-span-1 w-full h-full">
           <button className="before:ease relative h-12 w-40 overflow-hidden border border-yellow-800 bg-yellow-700 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-yellow-800 hover:before:-translate-x-40">
-            <span className="relative z-10 font-mono">Register Now</span>
+            <span className="relative font-mono">Register Now</span>
           </button>
         </div>
       </div>

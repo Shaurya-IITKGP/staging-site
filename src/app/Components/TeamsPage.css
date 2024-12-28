@@ -57,7 +57,7 @@ body
   box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
   transform: rotate(calc(360deg/var(--count)*var(--i)));
   transform-origin: 340px;
-  z-index: 100;
+  z-index: 10;
   overflow:hidden;
 }
 

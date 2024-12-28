@@ -10,9 +10,8 @@ function Home() {
     '/img2.jpg',
     '/img3.jpg',
     '/img4.jpg',
-    '/CardBg2.png',
-    '/CRICKET.png',
-    '/CHESS.png',
+  
+ 
   ]);
   const [clas, setClas] = useState("");
   const timeAutoNext = 4000;
@@ -49,7 +48,7 @@ function Home() {
           {images.slice(0, 4).map((img, index) => (
             <div className="item w-full h-full absolute inset-0" key={index}>
               <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
-                <Image src={img} alt={`Slide Image ${index + 1}` } objectFit="cover" layout="fill"  />
+                <Image src={img} alt={`Slide Image ${index + 1}`} layout="fill" objectFit="cover" />
               </div>
               <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
                 <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">

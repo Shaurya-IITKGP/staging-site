@@ -1,18 +1,23 @@
 import Esports from "./esportsAnimation"
+import Image from "next/image"
 
 
 const EsportsPage = () => {
     return (
         <div className="h-screen w-full relative">
-            <img
-                 src="/staging-site/Esports_bg2.jpg"
-                 alt="Esports background"
-                 className="absolute inset-0 w-full h-full object-cover -z-10"
-               />
+          
 
             <div className="relative h-full w-full grid grid-cols-12 grid-rows-12 gap-0">
                
-                
+            {/* <div className="fixed inset-0 z-0">
+                      <Image
+                        src="/Esports_bg2.jpg"
+                        alt="Background"
+                        layout="fill"
+                        objectFit="cover"
+                        className="opacity-30"
+                      />
+                    </div> */}
 
               
                 <div className="col-start-1 row-start-1 col-span-5 row-span-5 w-full h-full object-contain" style={{ transform: 'scale(0.5)', transformOrigin: 'top left' }}>
