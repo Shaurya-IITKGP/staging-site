@@ -1,4 +1,4 @@
-:root {
+:global(:root){
     --count : 6
 }
 .teamTitle{
@@ -8,18 +8,17 @@
 }
 
 body
-{
+{    margin-top: 100px;
     overflow-y: hidden;
     background: #1d1d14 ;
 }
 
 .container
 {
-    margin-top: 100px;
+
     position: relative;
     width: 600px;
     height:600px;
-    border: 2px solid #fff;
     border-radius: 50%;
 
 }
