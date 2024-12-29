@@ -4,9 +4,11 @@ import dynamic from 'next/dynamic';
 import Image from "next/image";
 import EsportsPage from "./esports";
 
+
 const Footer = dynamic(() => import('./footer'));
 const Animate = dynamic(() => import('./animate'));
 const Competitions = dynamic(() => import('./competition'));
+const About = dynamic(()=>import("./about"));
 const AnimatedNavbar = dynamic(() => import('./Navbar'));
 const Esports = dynamic(() => import('./esportsAnimation'), {
   loading: () => <div className="animate-pulse bg-gray-700 h-96"></div>
@@ -82,7 +84,14 @@ export default function MainPage() {
         </div>
       
       </div>
-      <Footer />
+      <div className="mb-5">
+        {/*About Us */}
+        <About/>
+      </div>
+      <div>
+        <Footer />
+      </div>
+      
     </>
   );
 }

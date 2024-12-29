@@ -71,11 +71,12 @@ const page = () => {
         </div>
         </div>
       </div>
-      <div className="h-screen">
-        <About />
-      </div>
+      
       <div>
         <Competitions />
+      </div>
+      <div className="">
+        <About />
       </div>
       <Footer />
     </div>
