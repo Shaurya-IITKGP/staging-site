@@ -5,9 +5,13 @@ import React from 'react'
 interface Cardprops{
     name : string;
     portfolio : string;
+    i: string;
+    l: string;
+    f: string;
+    m: string;
 } 
 
-const CardMobile : React.FC<Cardprops> = ({name,portfolio}) => {
+const CardMobile : React.FC<Cardprops> = ({name,portfolio,i,l,f,m}) => {
  
 
 
@@ -15,7 +19,7 @@ const CardMobile : React.FC<Cardprops> = ({name,portfolio}) => {
     <div className="w-80 h-[450px] border-none overflow-hidden relative bg-[#86B971] flex flex-col justify-center items-center rounded-2xl scale-65 -mt-32 k3:scale-85 k3:mt-0">
       {/* Image */}
       <img
-        src={`./img1.jpg`}       
+        src={`./team_pics/${name}.jpg`}       
         alt=""
         className={`absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-300`}
         style={{clipPath: 'ellipse(90% 250px at center 20px)'}}
@@ -35,10 +39,10 @@ const CardMobile : React.FC<Cardprops> = ({name,portfolio}) => {
             {portfolio}
           </p>
           <div className="flex flex-row gap-1 scale-75">
-              <a href="https://www.instagram.com/shaurya.iitkgp/" className="w-8 h-8 object-cover"><img src="./instagram.png" className="invert"/></a>
-              <a href="https://www.facebook.com/shauryaiitkgp/" className="w-8 h-8 object-cover"><img src="./facebook.png" className="invert"/></a>
-              <a href="https://www.linkedin.com/company/shaurya-iit-kharagpur/posts/?feedView=all" className="w-8 h-8 object-cover"><img src="./linkedin.png" className="invert"/></a>
-              <a href="https://www.linkedin.com/company/shaurya-iit-kharagpur/posts/?feedView=all" className="w-8 h-8 object-cover"><img src="./mail.png" className="invert"/></a>
+              <a href={i} className="w-8 h-8 object-cover"><img src="./instagram.png" className=""/></a>
+              <a href={f} className="w-8 h-8 object-cover"><img src="./facebook.png" className=""/></a>
+              <a href={l} className="w-8 h-8 object-cover"><img src="./linkedin.png" className=""/></a>
+              <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${m}`} className="w-8 h-8 object-cover"><img src="./mail.png" className=""/></a>
 
           </div>
         
