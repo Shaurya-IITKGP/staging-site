@@ -7,12 +7,30 @@ import MainNavBar from "../Components/MainNavBar";
 import Image from "next/image";
 import Footer from "../Components/footer";
 import Animate from "../Components/animate";
-import Competitions from "../Components/competition";
+import Competitions from "../Components/PrevEvents";
+import MobileCompetitions from "../Components/MobilePrevEvents";
 import About from "../Components/about";
 
 const page = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+   const [isMobile,setIsMobile] = useState(false);
+        // Check the window width and update state
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 1050);
+      };
+  
+      // Initial check
+      handleResize();
+  
+      // Listen for window resize
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup the event listener on unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +55,7 @@ const page = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black h-full"></div>
         <div className="fixed inset-0 z-0">
           <Image
-            src="/mainPage5.png"
+            src="/BgMainSite.png"
             alt="Background"
             layout="fill"
             objectFit="cover"
@@ -73,7 +91,7 @@ const page = () => {
       </div>
       
       <div>
-        <Competitions />
+        {isMobile?<MobileCompetitions />:<Competitions/>}
       </div>
       <div className="">
         <About />

@@ -64,18 +64,18 @@ const Competitions = () => {
                                         className="w-full h-full object-cover rounded-lg shadow-xl"
                                     />
                                 </div>
-                                <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center ">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center  ">
+                                <div className="w-[50%] flex flex-col mx-auto justify-evenly ">
+                                    <h2 className="text-4xl  text-yellow-400 font-bold tracking-wide text-center  ">
                                         Shaurya Run Challenge
                                     </h2>
-                                    <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">
-                                        🏃‍♀ Get ready to run with the #ShauryaRunChallenge! On this National Sports Day, celebrate fitness, 
-                                        competition, and sportsmanship. Whether it’s a 2.2K sprint or a helipad marathon, lace up and hit the 
-                                        track! Track your run with a running app, share your video with tracker stats (distance, time, etc.) on 
-                                        Facebook or Instagram, and tag Shaurya to get featured. Challenge three friends to join the fun.
-                                         🌟 Let’s honor the legacy of sports in India and inspire others to get moving!
+                                    <p className="text-white font-bold text-lg leading-relaxed text-justify">
+    🏃‍♀ Get ready to run with the #ShauryaRunChallenge! On this National Sports Day, celebrate fitness, 
+    competition, and sportsmanship. Whether it’s a 2.2K sprint or a helipad marathon, lace up and hit the 
+    track! Track your run with a running app, share your video with tracker stats (distance, time, etc.) on 
+    Facebook or Instagram, and tag Shaurya to get featured. Challenge three friends to join the fun. 🌟 
+    Let’s honor the legacy of sports in India and inspire others to get moving!
+</p>
 
-                                    </p>
                                 </div>
                             </div>
                         </section>
@@ -92,7 +92,7 @@ const Competitions = () => {
                                     />
                                 </div>
                                 <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center ">
+                                    <h2 className="text-4xl  text-yellow-400 mb-4 font-bold tracking-wide text-center ">
                                         E-Sports Talent Arena
                                     </h2>
                                     <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">
@@ -119,7 +119,7 @@ const Competitions = () => {
                                     />
                                 </div>
                                 <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center ">
+                                    <h2 className="text-4xl  text-yellow-400 mb-4 font-bold tracking-wide text-center ">
                                         College Rivals 2
                                     </h2>
                                     <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">
@@ -144,7 +144,7 @@ const Competitions = () => {
                                     />
                                 </div>
                                 <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center ">
+                                    <h2 className="text-4xl  text-yellow-400 mb-4 font-bold tracking-wide text-center ">
                                         Italian Grand Prix
                                     </h2>
                                     <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">
@@ -169,7 +169,7 @@ const Competitions = () => {
                                     />
                                 </div>
                                 <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center ">
+                                    <h2 className="text-4xl  text-yellow-400 mb-4 font-bold tracking-wide text-center ">
                                         Conquer The CAT
                                     </h2>
                                     <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">
@@ -195,7 +195,7 @@ const Competitions = () => {
                                     />
                                 </div>
                                 <div className="w-[50%] flex flex-col mt-4 mx-auto justify-center">
-                                    <h2 className="text-4xl  text-yellow-400 mb-10 font-bold tracking-wide text-center ">
+                                    <h2 className="text-4xl  text-yellow-400 mb-4 font-bold tracking-wide text-center ">
                                         Shaurya Introductory Seminar
                                     </h2>
                                     <p className="text-white font-bold text-lg leading-relaxed tracking-wide text-center">

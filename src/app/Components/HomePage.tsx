@@ -7,7 +7,7 @@ import EsportsPage from "./esports";
 
 const Footer = dynamic(() => import('./footer'));
 const Animate = dynamic(() => import('./animate'));
-const Competitions = dynamic(() => import('./competition'));
+// const Competitions = dynamic(() => import('./competition'));
 const About = dynamic(()=>import("./about"));
 const AnimatedNavbar = dynamic(() => import('./Navbar'));
 const Esports = dynamic(() => import('./esportsAnimation'), {
@@ -77,7 +77,7 @@ export default function MainPage() {
 
 
        <div className="z-20 ">
-        <Competitions/>
+        {/* <Competitions/> */}
 
         {/* <Esports/> */}
        <EsportsPage/>
