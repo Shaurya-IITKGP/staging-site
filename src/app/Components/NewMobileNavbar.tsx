@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from 'next/link';
 import Image from 'next/image';
 
 const NewMobileNavbar = () => {
@@ -22,8 +23,8 @@ const NewMobileNavbar = () => {
     };
 
     return (
-        <div className="flex justify-between fixed z-20 w-screen">
-            <div>
+        <div className="flex justify-between bg-black bg-opacity-75 fixed z-[1000] w-screen">
+            <div className="ml-4">
                 <Image alt='ShauryaLogo' src='/Shaurya_Logo.png' width={100} height={100} />
             </div>
             {/* Mobile Menu Button */}
@@ -34,7 +35,7 @@ const NewMobileNavbar = () => {
                     className={`text-2xl cursor-pointer relative group px-4 py-2 
                         border border-lightOrange/30 rounded-lg
                         bg-gradient-to-b from-black/60 to-black/40`}
-                    onClick={handleMenuToggle} // Updated to use handleMenuToggle
+                    onClick={handleMenuToggle}
                 >
                     <span className="text-lightOrange">☰</span>
                 </motion.div>
@@ -50,12 +51,11 @@ const NewMobileNavbar = () => {
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                         className={`md:hidden mt-6 backdrop-blur-xl bg-black/80 rounded-2xl p-4 
-                            border border-lightOrange/30 fixed top-0 left-0 w-full h-full z-20`} // Fixed position
+                            border border-lightOrange/30 fixed top-0 left-0 w-full h-full z-20`}
                     >
                         {navItems.map((item, index) => (
-                            <motion.a
+                            <motion.div
                                 key={item.name}
-                                href={item.href}
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 whileHover={{ scale: 1.05, x: 10 }}
@@ -66,12 +66,12 @@ const NewMobileNavbar = () => {
                                     text-white hover:text-white transition-all duration-300`}
                                 onClick={() => setIsMenuOpen(false)} // Close menu on item click
                             >
-                                <div className="relative z-10 flex items-center gap-2">
+                                <Link href={item.href} className="relative z-10 flex items-center gap-2">
                                     <div className="flex flex-col">
                                         <span>{item.name}</span>
                                     </div>
-                                </div>
-                            </motion.a>
+                                </Link>
+                            </motion.div>
                         ))}
                     </motion.nav>
                 )}

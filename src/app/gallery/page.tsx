@@ -10,8 +10,6 @@ function Home() {
     '/img2.jpg',
     '/img3.jpg',
     '/img4.jpg',
-  
- 
   ]);
   const [clas, setClas] = useState("");
   const timeAutoNext = 4000;
@@ -28,29 +26,29 @@ function Home() {
   const showSlider = (type: string) => {
     if (type === "next") {
       setImages((prev) => {
-        const newImages = [...prev, ...prev.slice(0, 3)]; // Add the first 3 images to the end
-        return newImages.slice(3); // Remove the first 3 images
+        const newImages = [...prev, ...prev.slice(0, 3)];
+        return newImages.slice(3);
       });
       setClas((prev) => prev + " next");
     } else {
       setImages((prev) => {
-        const lastImages = prev.slice(-3); // Get the last 3 images
-        return [...lastImages, ...prev.slice(0, prev.length - 3)]; // Move the last 3 images to the front
+        const lastImages = prev.slice(-3);
+        return [...lastImages, ...prev.slice(0, prev.length - 3)];
       });
       setClas((prev) => prev + " prev");
     }
   };
 
   return (
-    <div className="App overflow-x-hidden overflow-y-hidden">
-      <div className={`carousel${clas} h-screen -mt-12 w-screen overflow-x-hidden overflow-y-hidden`}>
+    <div className="App overflow-hidden"> {/* Removed overflow-x and overflow-y */}
+      <div className={`carousel${clas}`}>
         <div className="list flex">
           {images.slice(0, 4).map((img, index) => (
-            <div className="item w-full h-full absolute inset-0" key={index}>
+            <div className="item" key={index}>
               <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
                 <Image src={img} alt={`Slide Image ${index + 1}`} layout="fill" objectFit="cover" />
               </div>
-              <div className="content absolute top-[20%] w-[1140px] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
+              <div className="content absolute top-[20%] w-[90%] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
                 <div className="author font-bold tracking-[10px] transform translate-y-[50px] filter blur-[20px] opacity-0 animate-[showContent_0.5s_1s_linear_1_forwards]">
                   LUNDEV
                 </div>

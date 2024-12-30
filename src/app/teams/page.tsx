@@ -1,6 +1,8 @@
 import TeamsPage2 from "../Components/new";
 import CardsmobileComponent from "../Components/mobile_teams_component";
-import Image from "next/image";
+
+
+
 export default function Home() {
     const team=[['Tejashwi Kumar Jha','Executive','https://www.instagram.com/jha_tejashwi?igsh=cW9kb25sdm9xMjIx','https://www.facebook.com/tejaswi.jha.3','https://www.linkedin.com/in/tejashwi-kumar-jha-b988ba245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','tejashwijha.shaurya.iitkgp@gmail.com'],
                 ['Jival Chorawala','Executive','','',''],
@@ -27,29 +29,76 @@ export default function Home() {
     
 
   return (
+    
     <div className="flex flex-col justify-center min-h-screen">
-       <div className="fixed inset-0 z-0">
-                <Image
-                  src="/mainPage5.png"
-                  alt="Background"
-                  layout="fill"
-                  objectFit="cover"
-                  className="opacity-30"
-                />
-              </div>
+      {/* Header Section - 30-40% */}
+      {/* <div className="bg-[#C4A484] py-12 text-center">
+        <h1 className="font-serif text-4xl font-bold">
+          Web Team & Executives
+        </h1>
+      </div> */}
+
+      {/* Teams Section - 60-70% */}
+      {/* <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
+      </Head> */}
       <div className="flex-col gap-32 k1:gap-0 hidden k2:flex">
-        {/* Teams Section */}
+
+      <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
+                <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">
+                  <div className="">Executives</div>  
+                  <div className="">And</div> 
+                  <div className="">Finance</div> 
+                </div>
+
+                <div className="k1:mr-24 mr-0"><TeamsPage2 arr={team.slice(0,5)}/></div>
+      </div>
+
         <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
           <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">
-            <div className="">Web</div>
-            <div className="">And</div>
-            <div className="">Design</div>
+              <div className="">Events</div>  
+              <div className="">And</div> 
+              <div className="">Web</div> 
           </div>
-          <div className="k1:mr-24 mr-0"><TeamsPage2 arr={[]} /></div>
+          <div className="k1:mr-24 mr-0"><TeamsPage2 arr={team.slice(5,10)}/></div>
         </div>
-        {/* Other sections... */}
+
+        <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
+                <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">
+                  <div className="">Publicity</div>  
+                  <div className="">And</div> 
+                  <div className="">Logistics</div> 
+                </div>
+
+                <div className="k1:mr-24 mr-0"><TeamsPage2 arr={team.slice(10,16)}/></div>
+        </div>
+
+        <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
+                <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">
+                <div className="">Design</div>  
+                {/* <div className="">And</div> 
+                <div className="">Logistics</div>  */}
+                </div>
+
+                <div className="k1:mr-24 mr-0"><TeamsPage2 arr={team.slice(16,19)}/></div> 
+        </div>
+
+        <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
+                <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">
+                <div className="">Sponsorship</div>  
+                {/* <div className="">And</div> 
+                <div className="">Logistics</div>  */}
+                </div>
+
+                <div className="k1:mr-24 mr-0"><TeamsPage2 arr={team.slice(19)}/></div> 
+        </div>
+
+       
       </div>
-      <div className="flex justify-center items-center w-screen ml-0 k2:hidden"><CardsmobileComponent team={[]} /></div>
+      <div className="flex justify-center items-center w-screen ml-0 k2:hidden"><CardsmobileComponent team={team}/></div>
     </div>
   );
 }
