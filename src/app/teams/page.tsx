@@ -1,5 +1,6 @@
 import TeamsPage2 from "../Components/new";
 import CardsmobileComponent from "../Components/mobile_teams_component";
+import Image from "next/image";
 
 
 
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     
     <div className="flex flex-col justify-center min-h-screen">
+
       {/* Header Section - 30-40% */}
       {/* <div className="bg-[#C4A484] py-12 text-center">
         <h1 className="font-serif text-4xl font-bold">
@@ -46,6 +48,15 @@ export default function Home() {
           />
       </Head> */}
       <div className="flex-col gap-32 k1:gap-0 hidden k2:flex">
+        <div className="fixed inset-0 z-0">
+                  <Image
+                    src="/BgMainSite.png"
+                    alt="Background"
+                    layout="fill"
+                    objectFit="cover"
+                    className="opacity-30"
+                  />
+                </div>
 
       <div className="flex k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
                 <div className="flex k1:flex-col flex-row gap-6 k1:gap-0 text-7xl font-mono ml-0 k1:ml-24">

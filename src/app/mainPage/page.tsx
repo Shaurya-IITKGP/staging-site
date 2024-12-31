@@ -90,12 +90,13 @@ const page = () => {
         </div>
       </div>
       
-      <div>
-        {isMobile?<MobileCompetitions />:<Competitions/>}
-      </div>
       <div className="">
         <About />
       </div>
+      <div>
+        {isMobile?<MobileCompetitions />:<Competitions/>}
+      </div>
+     
       <Footer />
     </div>
   );

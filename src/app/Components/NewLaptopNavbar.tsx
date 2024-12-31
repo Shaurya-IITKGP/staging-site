@@ -22,10 +22,11 @@ const NewNavbar = () => {
     }, []);
   return (
     <div
-      className={`text-white fixed top-6 inset-x-0 flex justify-center z-[1000] transition-transform duration-300 `}
+      className={` fixed top-6 inset-x-0 flex z-50 justify-center `}
     >
-      <div className="w-3/5 hidden md:flex justify-center items-center border border-yellow-500 rounded-full h-12 bg-gray-900 bg-opacity-25 text-white shadow-md relative mainNavBar">
-        <div className="containernavbar mx-auto flex items-center justify-between px-6 h-12">
+      
+      <div className="w-3/5 hidden md:flex justify-center items-center border border-yellow-500 rounded-full h-12 relative mainNavBar">
+        <div className="container mx-auto flex items-center justify-between px-6">
           {/* Left Items */}
           <div className={`flex  rounded-full font-bold text-yellow-400 ${isTab?"space-x-4 text-xs":"space-x-12"}`}>
             <motion.div
@@ -62,7 +63,7 @@ const NewNavbar = () => {
               alt="Shaurya Logo"
               width={isTab?200:200}
               height={isTab?200:200}
-              className="object-contain z-[1000]"
+              className="object-contain logo"
             />
           </Link>
 
