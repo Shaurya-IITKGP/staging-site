@@ -273,8 +273,8 @@ const EventsPage: React.FC = () => {
         {selectedEvent && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-hidden z-50">
             <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md lg:overflow-hidden">
-              <div className="flex flex-col md:flex-row justify-between items-stretch h-full max-h-[80vh] align-middle">
-                <div className="w-full md:w-1/2 md:h-full h-[50vh]">
+              <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle">
+                <div className="w-full md:w-1/2 md:h-full h-[40vh]">
                   <Image
                     height={100}
                     width={100}
@@ -298,7 +298,7 @@ const EventsPage: React.FC = () => {
                   </div>
                   <br />
                   <button
-                    className="w-2/5 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
+                    className="w-2/5 mt-2 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
                     onClick={handleCloseModal}
                   >
                     Close

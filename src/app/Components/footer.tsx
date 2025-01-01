@@ -52,10 +52,13 @@ const Footer = () => {
               <div className="space-y-2 ">
                 <ul className="space-y-1">
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
-                    <Link href="/about">About Us</Link>
+                    <Link href="/mainPage">Home</Link>
                   </li>
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
                     <Link href="/events">Events</Link>
+                  </li>
+                  <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
+                    <Link href="/contact">Campus Ambassador</Link>
                   </li>
                 </ul>
               </div>
@@ -66,7 +69,10 @@ const Footer = () => {
                     <Link href="/gallery">Gallery</Link>
                   </li>
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/teams">Teams</Link>
+                  </li>
+                  <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
+                    <Link href="/sponsors">Sponsors</Link>
                   </li>
                 </ul>
               </div>

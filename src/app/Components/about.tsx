@@ -41,12 +41,12 @@ const About = () => {
           </div>
 
           {/* Text content */}
-          <div className="w-full mt-12 md:mt-0 md:w-1/2 text-white ">
-            <span className='text-yellow-500 font-bold'>Shaurya </span>is not just a sports fest; 
-            it's a vibrant celebration of athleticism and camaraderie,
-            where the spirit of competition ignites passion and unity among colleges nationwide.
-            Join us to witness the thrill of sports as we elevate the game together!
-          </div>
+          <div className="w-full mt-12 md:mt-0 md:w-1/2 text-white px-4 md:px-8 text-justify">
+  <span className="font-bold text-yellow-400">IIT Kharagpur</span> proudly presents 
+  <span className="font-bold text-yellow-400"> Shaurya</span>, one of India’s most renowned college sports festivals. This iconic event hosts exhilarating sports competitions, drawing participants from over 400 colleges nationwide. Beyond the games, 
+  <span className="font-bold text-yellow-400"> Shaurya</span> offers an array of exciting activities, including adventure sports, cultural showcases, interactive workshops, and fun-filled carnival games, ensuring there’s something for everyone to enjoy.
+</div>
+
         </div>
       </div>
 
