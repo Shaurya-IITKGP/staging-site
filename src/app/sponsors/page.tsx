@@ -29,35 +29,36 @@ const Sponsors: React.FC = () => {
       {/* Fixed Background Image */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/mainPage.png"
+          src="/Esports_bg.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"
           className="opacity-30 object-top"
         />
       </div>
-      <div className=" flex justify-center items-center mt-32 text-4xl font-bold">
-        Previous Sponsors
-
-      </div>
+      <div className="flex justify-center items-center mt-32 text-4xl font-bold">
+  Previous Sponsors
+</div>
 
       {/* Sponsors Container */}
-      <div className="flex mt-12 flex-wrap justify-center gap-4 p-10 relative z-10">
-        {spons.map((val, index) => (
-          <div
-            key={index}
-            className="max-w-[150px] w-full bg-amber-950 bg-opacity-75 shadow-lg shadow-[#d4ad75] rounded-lg  overflow-hidden border-2 border-[#d4ad75]"
-          >
-            <Image
-              className="rounded-lg w-full h-full"
-              src={val.logo}
-              alt={`Sponsor Logo ${index + 1}`}
-              width={150}
-              height={150}
-            />
-          </div>
-        ))}
-      </div>
+      <div className=" flex justify-center">
+      <div className="grid justify-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-12 p-10 relative z-10">
+  {spons.map((val, index) => (
+    <div
+      key={index}
+      className="max-w-[150px] w-full bg-amber-950 bg-opacity-75  shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]"
+    >
+      <Image
+        className="rounded-lg w-full h-full"
+        src={val.logo}
+        alt={`Sponsor Logo ${index + 1}`}
+        width={150}
+        height={150}
+      />
+    </div>
+  ))}
+  </div>
+</div>
       <Footer/>
     </div>
   );

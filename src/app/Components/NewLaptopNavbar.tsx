@@ -24,7 +24,7 @@ const NewNavbar = () => {
 
     return (
       <div
-        className={`fixed top-6 inset-x-0 flex z-50 justify-center`}
+        className={`fixed top-6 inset-x-0 flex z-[1000] justify-center`}
       >
         <div className="w-3/5 hidden md:flex justify-center items-center border border-yellow-500 rounded-full h-12 relative mainNavBar backdrop-blur-lg bg-opacity-60 ">
           <div className="container mx-auto flex items-center justify-between px-6">
