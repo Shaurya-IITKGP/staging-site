@@ -1,9 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Lottie from "react-lottie-player";
-import eagleAnimation from "../../../public/eagleAnimation.json"; // Add your Lottie JSON file
-import NewNavbar from "../Components/NewLaptopNavbar";
-import MainNavBar from "../Components/MainNavBar";
 import Image from "next/image";
 import Footer from "../Components/footer";
 import Animate from "../Components/animate";
@@ -62,8 +58,8 @@ const page = () => {
               className="opacity-30"
             />
           </div>
-          <div className="z-20 flex flex-col md:justify-center md:items-start items-center md:mt-0 mt-60 w-full">
-            <div className="flex">
+          <div className="z-20 flex flex-col md:justify-center  items-center md:mt-0 mt-60 w-full">
+            <div className="flex justify-center">
               <div className="relative">
                 <Image
                   src="/Shaurya_Title_20255.png"
@@ -74,17 +70,6 @@ const page = () => {
                 />
                 <Animate />
               </div>
-              <div className="z-20 flex justify-center items-center">
-                <div className="w-[600px]">
-                  <Lottie
-                    loop
-                    rev="true"
-                    animationData={eagleAnimation}
-                    play
-                    style={{ width: 1200, height: 600 }}
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -94,10 +79,11 @@ const page = () => {
         <About />
       </div>
       <div>
-      <h1 className="text-6xl z-40 md:text-6xl mt-16 text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">
+        <h1 className="text-6xl z-40 md:text-6xl mt-16 text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">
           Previous Events
         </h1>
-        {isMobile ? <MobileCompetitions /> : <Competitions />}</div>
+        {isMobile ? <MobileCompetitions /> : <Competitions />}
+      </div>
 
       <Footer />
     </div>

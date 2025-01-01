@@ -22,7 +22,7 @@ const NewMobileNavbar = () => {
   };
 
   return (
-    <div className="flex justify-between z-[100] bg-black bg-opacity-45 fixed w-screen">
+    <div className="flex justify-between z-[1000] bg-black bg-opacity-45 fixed w-screen">
       <div className="">
         <Image
           alt="ShauryaLogo"
