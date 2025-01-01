@@ -41,8 +41,8 @@
     position: absolute;
     inset: 50px;
     border: 4px solid transparent;
-    border-left: 4px solid #c19661;
-    border-right: 4px solid #c19661;
+    border-left: 4px solid #8B4513;
+    border-right: 4px solid #8B4513;
     border-radius: 50%;
     animation: animate_01 8s linear infinite;
     z-index: 1;
@@ -53,8 +53,8 @@
     position: absolute;
     inset: 100px;
     border: 4px solid transparent;
-    border-left: 4px solid #2196f3;
-    border-right: 4px solid #fff;
+    border-left: 4px solid #d4ad75;
+    border-right: 4px solid #d4ad75;
     border-radius: 50%;
     animation: animate_02 4s linear infinite;
     z-index: 1;
