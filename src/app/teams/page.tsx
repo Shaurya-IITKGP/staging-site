@@ -58,7 +58,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="fixed inset-0 z-0">
           <Image
-            src="/CardBg2.png"
+            src="/CardBg.png"
             alt="Background"
             layout="fill"
             objectFit="cover"
@@ -69,52 +69,52 @@ export default function Home() {
         {/* Sidebar and Content */}
         <div className="flex z-20 k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
           {/* Sidebar */}
-          <div className="bg-blue-800">
+          <div className="bg-amber-950 font-semibold bg-opacity-75 p-4 border-l-0 border-2 border-[#d4ad75]">
             <ul className="hover:text-white cursor-pointer z-40 text-white space-y-4">
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("executives")}
               >
                 Executives
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("finance")}
               >
                 Finance
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("events")}
               >
                 Events
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("web")}
               >
                 Web
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("publicity")}
               >
                 Publicity And Marketing
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("sponsor")}
               >
                 Sponsorship
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("logistics")}
               >
                 Logistics
               </li>
               <li
-                className="hover:bg-blue-600 p-2 rounded"
+                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
                 onClick={() => handleSectionClick("design")}
               >
                 Design

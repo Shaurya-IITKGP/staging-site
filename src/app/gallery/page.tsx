@@ -66,7 +66,7 @@ function Home() {
         <div className="list flex">
           {images.slice(0, 4).map((img, index) => (
             <div className="item" key={index}>
-              <div className={`w-full h-full absolute inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
+              <div className={`w-full h-full absolute z-30 inset-0 transition-all duration-700 ease-in-out ${clas === "next" ? "background-image-next" : clas === "prev" ? "background-image-prev" : ""}`}>
                 <Image src={img} alt={`Slide Image ${index + 1}`} layout="fill" objectFit={isMobile?"contain":"cover"} />
               </div>
               <div className="content absolute top-[20%] w-[90%] max-w-[80%] left-1/2 transform -translate-x-1/2 pr-[30%] box-border text-white">
