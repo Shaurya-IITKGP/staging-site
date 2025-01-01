@@ -48,7 +48,6 @@ const page = () => {
     <div>
       <div className="h-screen relative">
         <div className="bg-black z-40 bg-opacity-65 ">
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black h-full"></div>
           <div className="fixed inset-0 z-0">
             <Image
               src="/BgMainSite.png"
@@ -58,7 +57,7 @@ const page = () => {
               className="opacity-30"
             />
           </div>
-          <div className="z-20 flex flex-col md:justify-center  items-center md:mt-0 mt-60 w-full">
+          <div className="z-20 flex flex-col md:justify-center  items-center md:mt-0 mt-16 w-full">
             <div className="flex justify-center">
               <div className="relative">
                 <Image

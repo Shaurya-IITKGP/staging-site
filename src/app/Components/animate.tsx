@@ -47,12 +47,12 @@ const Animate = () =>{
     },{scope:container});
 
     return(
-        <div ref={container} className="flex justify-center  min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
+        <div ref={container} className="flex sm:justify-center  min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
             <div className="flex flex-wrap justify-center gap-2">
                 {text.slice(0,4).map((item, index) => (
                     <span 
                         key={index} 
-                        className="ancient-letter text-xl md:text-xl font-serif
+                        className="ancient-letter text-xs md:text-xl font-serif
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
                         font-bold tracking-wider"
                         style={{
@@ -68,7 +68,7 @@ const Animate = () =>{
                 {text.slice(4).map((item, index) => (
                     <span 
                         key={index} 
-                        className="ancient-letter text-4xl md:text-xl font-serif
+                        className="ancient-letter text-xs md:text-xl font-serif
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
                         font-bold tracking-wider"
                         style={{
