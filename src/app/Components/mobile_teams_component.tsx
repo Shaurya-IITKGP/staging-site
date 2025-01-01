@@ -1,5 +1,6 @@
 import CardMobile from './mobile_teams_card';
 import React from 'react'
+import Image from 'next/image';
 
 interface Props{
   team:string[][]
@@ -10,6 +11,15 @@ const CardsmobileComponent:React.FC<Props> = ({team}) => {
 
   return (
     <div className='flexjustify-center flex-row mt-16 z-10'>
+      <div className="fixed inset-0 z-0">
+                <Image
+                  src="/CardBg.png"
+                  alt="Background"
+                  layout="fill"
+                  objectFit="cover"
+                  className="opacity-30"
+                />
+              </div>
      <div>
         <ul className='grid'>
           {team.map((item, index) => (
