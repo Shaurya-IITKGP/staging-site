@@ -46,7 +46,7 @@ const Sponsors: React.FC = () => {
         {spons.map((val, index) => (
           <div
             key={index}
-            className="max-w-[150px] w-full bg-amber-950 bg-opacity-55 shadow-lg shadow-[#d4ad75] rounded-lg  overflow-hidden border border-[#d4ad75]"
+            className="max-w-[150px] w-full bg-amber-950 bg-opacity-75 shadow-lg shadow-[#d4ad75] rounded-lg  overflow-hidden border-2 border-[#d4ad75]"
           >
             <Image
               className="rounded-lg w-full h-full"
