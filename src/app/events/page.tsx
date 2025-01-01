@@ -223,10 +223,9 @@ const EventsPage: React.FC = () => {
                         border: "4px solid #0000", // Dark blue border
                         borderRadius: "0px", // Sharp corners
                         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.5)", // Adds depth for a tough appearance
-                        clipPath: "polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%)"
+                        clipPath: "polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%)",
                       }}
                     >
-                    
                       {/* Background Image Section with Gradient */}
                       <div className="absolute inset-0 -z-10">
                         {/* <Image
@@ -241,35 +240,32 @@ const EventsPage: React.FC = () => {
                       </div>
                       {/* Image Section with Transition Effect */}
                       <div className="relative">
-                        <img
+                        <Image
+                          width={100}
+                          height={100}
                           src={event.image}
                           alt={event.title}
-                          className="h-full w-full object-cover object-top rounded-t-none transition-transform duration-300 ease-in-out transform hover:scale-105" // Added transition effect
+                          className="h-full w-full object-cover object-top rounded-t-none transition-transform duration-300 ease-in-out transform  bg-opacity-50" // Added transition effect
                         />
-                        <div className="bg-yellow-500 filter blur-md w-4 h-full group-hover:animate-sword-slash absolute opacity-0 top-0"></div>
+                        <div className="bg-yellow-500 filter blur-md w-4 h-full animate-sword-slash absolute opacity-0 top-0"></div>
                       </div>
                       {/* Content Section */}
-                      <div className="p-5 absolute top-64 bg-transparent text-white z-10">
+                      <div className="p-5 absolute top-64 bg-transparent z-10">
                         {" "}
-                        {/* z-10 to ensure content is above the background image */}
-                        <h2 className="text-lg font-bold text-yellow-300 text-center mb-2">
-                          {event.title}
-                        </h2>{" "}
-                        {/* Changed text color for emphasis */}
-                        <p className="text-sm text-gray-200 font-bold line-clamp-3 text-center pr-6">
-                          {event.description}
-                        </p>
                         <button
-                          className="mt-4 w-48 ml-3 bg-amber-950 bg-opacity-75 text-white py-2 px-4 rounded-lg font-semibold hover:bg-white hover:text-black hover:bg-opacity-30 transition-all"
+                          className="bottom-0 items-end w-48 ml-3 bg-amber-950 bg-opacity-75 text-white py-2 px-4 rounded-lg font-semibold hover:bg-white hover:text-black hover:bg-opacity-30 transition-all"
                           onClick={() => handleOpenModal(event)}
                         >
                           See More
                         </button>
                       </div>
+                      <h2 className="text-lg font-bold text-yellow-300 text-center mr-6">
+                          {event.title}
+                        </h2>{" "}
                     </div>
                   ))}
               </div>
-            )
+            ),
           )}
         </div>
 
