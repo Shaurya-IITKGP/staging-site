@@ -62,14 +62,14 @@ const config: Config = {
         },
         'sword-slash': {
           '0%': { 
-            transform: 'translateX(-100%) skewX(-20deg)',
+            transform: 'translateX(-200%) skewX(-20deg)',
             opacity: '0'
           },
-          '50%': {
-            opacity: '1'
+          '30%': {
+            opacity: '0.3'
           },
           '100%': { 
-            transform: 'translateX(100%) skewX(-20deg)',
+            transform: 'translateX(3000%) skewX(-20deg)',
             opacity: '0'
           },
         },
