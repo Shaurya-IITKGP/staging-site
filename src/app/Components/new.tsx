@@ -46,9 +46,9 @@ const TeamsPage2: React.FC<TeamsPage2Props>= ({arr}) => {
 
                              <div className="flex flex-row gap-1">
                                 <a href={`${arr[i-1][2]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./instagram.png" className=""/></a>
-                                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${arr[i-1][5]}`} target="_blank" className="w-8 h-8 object-cover"><img src="./youtube.png" className=""/></a>
-                                <a href={`${arr[i-1][3]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./facebook.png" className=""/></a>
                                 <a href={`${arr[i-1][4]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./linkedin.png" className=""/></a>
+                                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${arr[i-1][5]}`} target="_blank" className="w-8 h-8 object-cover"><img src="./mail.png" className=""/></a>
+                                <a href={`${arr[i-1][3]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./facebook.png" className=""/></a>
                              </div>
                          </div> ))}
                       </div>
