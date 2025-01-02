@@ -90,7 +90,7 @@ const NewNavbar = () => {
                 whileHover={{ rotateX: 10, rotateZ: 5, transition: { duration: 0.3 } }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href="/" className="hover:text-gray-400">
+                <Link href="https://ca.shauryaiitkgp.in/" className="hover:text-gray-400">
                   CA
                 </Link>
               </motion.div>

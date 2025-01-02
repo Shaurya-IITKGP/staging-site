@@ -12,7 +12,7 @@ const NewMobileNavbar = () => {
     { name: "Sponsors", href: "/sponsors" },
     { name: "Teams", href: "/teams" },
     { name: "Esports", href: "/esports" },
-    { name: "CA", href: "/ca" },
+    { name: "CA", href: "https://ca.shauryaiitkgp.in/" },
   ]; // Example nav items
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
