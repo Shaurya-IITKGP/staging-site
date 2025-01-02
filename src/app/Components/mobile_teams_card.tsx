@@ -12,7 +12,7 @@ interface Cardprops {
 
 const CardMobile: React.FC<Cardprops> = ({ name, portfolio, i, l, f, m }) => {
   return (
-    <div className="w-80 h-[475px] p-2 border-4 border-[#d4ad75] rounded-2xl overflow-hidden relative bg-amber-950 bg-opacity-75 flex flex-col">
+    <div className="w-80 h-[485px] p-2 border-4 border-[#d4ad75] rounded-2xl overflow-hidden relative bg-amber-950 bg-opacity-75 flex flex-col">
       {/* Image */}
       <div className="w-full h-3/4 flex justify-center items-center">
         <Image
@@ -20,18 +20,18 @@ const CardMobile: React.FC<Cardprops> = ({ name, portfolio, i, l, f, m }) => {
           height={200}
           src={`./team_pics/${name}.jpg`}
           alt={name}
-          className="w-full h-full object-cover" // Use object-cover to maintain aspect ratio
+          className="w-full h-full object-cover rounded-2xl" // Use object-cover to maintain aspect ratio
         />
       </div>
 
       {/* Content Section */}
-      <div className="h-1/4 w-full p-2 flex flex-col justify-center items-center bg-[#d4ad75] backdrop-blur-md rounded-t-2xl">
+      <div className="h-1/4 w-full flex flex-col justify-center items-center bg-[#d4ad75] backdrop-blur-md rounded-t-2xl">
         <h3 className="text-xl font-bold text-center text-gray-800">{name}</h3>
         <p className="text-lg mb-2 text-center text-gray-600">{portfolio}</p>
       </div>
 
       {/* Social Media Section */}
-      <div className="w-full flex justify-center bg-white py-2 rounded-b-2xl">
+      <div className="w-full flex justify-center items-center bg-white pb-3 pt-2 mb-1 rounded-b-2xl"> {/* Increased padding (py-4) */}
         <div className="flex gap-4">
           <a href={i} className="w-8 h-8">
             <img src="./instagram.png" className="w-full h-full object-cover" alt="Instagram" />
