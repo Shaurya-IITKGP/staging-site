@@ -11,7 +11,7 @@ const About = () => {
         </h1>
         
         {/* Content section */}
-        <div className="flex flex-col md:flex-row justify-evenly items-center  md:border-t md:border-[#d4ad75] md:ml-12 md:mr-12">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center  md:border-t md:border-[#d4ad75] md:ml-12 md:mr-12">
           {/* YouTube video thumbnail with YouTube logo in the center */}
           <div className=" w-12/12  relative shadow-lg shadow-yellow-500 rounded-md mt-12">
             <a
@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           {/* Text content */}
-          <div className="w-full mx-auto mt-12 md:mt-0 md:w-1/2 text-white px-4 pr-4 md:px-8 text-justify">
+          <div className="w-full mx-auto mt-12 lg:mt-0 lg:w-1/2 text-white px-4 pr-4 md:px-8 text-justify">
             <span className="font-bold text-yellow-400">IIT Kharagpur</span> proudly presents 
             <span className="font-bold text-yellow-400"> Shaurya</span>, one of India’s most renowned college sports festivals. This iconic event hosts exhilarating sports competitions, drawing participants from over 400 colleges nationwide. Beyond the games, 
             <span className="font-bold text-yellow-400"> Shaurya</span> offers an array of exciting activities, including adventure sports, cultural showcases, interactive workshops, and fun-filled carnival games, ensuring there’s something for everyone to enjoy.

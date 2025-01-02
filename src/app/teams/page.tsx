@@ -3,6 +3,7 @@ import TeamsPage2 from "../Components/new";
 import CardsmobileComponent from "../Components/mobile_teams_component";
 import Image from "next/image";
 import { useState } from "react";
+import Footer from "../Components/footer";
 
 export default function Home() {
   const [isExecOpen, setIsExecOpen] = useState(true);
@@ -36,7 +37,7 @@ export default function Home() {
     ['Matthews Bonthu', 'Events', 'https://www.instagram.com/matthews_bonthu/', '', 'https://www.linkedin.com/in/matthews-bonthu-99b32719b/', 'matthews.bonthu@shauryaiitkgp.in'],
     ['Indrajeet Kumar', 'Events', 'https://www.instagram.com/_indrajeetkumar_/profilecard/?igsh=MXI3cWdodm54NHo1cQ==', 'https://www.facebook.com/profile.php?id=100086280951357&mibextid=ZbWKwL', 'https://www.linkedin.com/in/indrajeet-kumar-050919259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'knp.indrajeetkumar@gmail.com'],
     ['Sahil Sinha', 'Web', 'https://www.instagram.com/sahilsinha_11/', 'https://www.facebook.com/profile.php?id=100088538255044', 'https://www.linkedin.com/in/sahil-sinha-a53b4925a/', 'sahilsinha.shaurya.iitkgp@gmail.com'],
-    ['Pranjul Shukla', 'Web', '', '', '', 'pranjul.shukla@shauryaiitkgp.in'],
+    ['Pranjul Shukla', 'Web', '', '','', 'captaincoro444@gmail.com' ,'https://drive.google.com/file/d/1FkmZOGQrdKocy8Zopry4l1fzVJl4eH3a/view?usp=drive_link'],
     ['Rakesh Tella', 'Publicity', 'https://www.instagram.com/rakesh_tella/', 'https://www.facebook.com/share/4b2k7qVANWJ5C5Z9/', 'https://in.linkedin.com/in/rakesh-tella8', 'rakesh.tella@shauryaiitkgp.in'],
     ['Hemant Kamble', 'Publicity', 'https://www.instagram.com/h_v_kamble/profilecard/?igsh=cWU4Z3Qzb25oNDZt', 'https://www.facebook.com/hemant.kamble.9803150?mibextid=kFxxJD', 'https://www.linkedin.com/in/hemant-kamble-7b5378229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'hemantkamble.shaurya.iitkgp@gmail.com'],
     ['Tuhsin Suhana Rahman', 'Publicity', 'https://www.instagram.com/tuhsin13/', 'https://www.facebook.com/profile.php?id=100086747262244', 'https://www.linkedin.com/in/tuhsin-suhana-rahman-5573a8251/', 'tuhsinsrahman.shaurya.iitkgp@gmail.com'],
@@ -68,52 +69,52 @@ export default function Home() {
         {/* Sidebar and Content */}
         <div className="flex z-20 k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
           {/* Sidebar */}
-          <div className="bg-amber-950 font-semibold bg-opacity-75 p-6 border-l-0 border-2 border-[#d4ad75] rounded-r-lg shadow-lg">
+          <div className="bg-[#1a1716] bg-gradient-to-t from-[#070404] to-[#42221f] text-[#E6D5C3] bg-opacity-95 font-semibold p-6  border-l-0 border-2 border-[#d4ad75] rounded-r-lg shadow-lg">
             <ul className="cursor-pointer z-40 text-[#d4ad75] space-y-6 font-['Cinzel'] text-lg">
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("executives")}
               >
                 Executives
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("finance")}
               >
                 Finance
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("events")}
               >
                 Events
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("web")}
               >
                 Web
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("publicity")}
               >
                 Publicity And Marketing
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("sponsor")}
               >
                 Sponsorship
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("logistics")}
               >
                 Logistics
               </li>
               <li
-                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
+                className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("design")}
               >
                 Design
@@ -137,6 +138,7 @@ export default function Home() {
       <div className="flex z-20 mt-32 justify-center items-center w-screen ml-0 k2:hidden">
        <CardsmobileComponent team={team}/>
       </div>
+      <Footer/>
     </div>
   );
 }

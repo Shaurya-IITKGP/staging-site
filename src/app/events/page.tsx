@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image"; // Import Image from Next.js
+import Footer from "../Components/footer";
 // import MainNavBar from "../Components/MainNavBar";
 
 interface Event {
@@ -323,6 +324,7 @@ const EventsPage: React.FC = () => {
           </div>
         )}
       </div>
+      <Footer/>
     </>
   );
 };
