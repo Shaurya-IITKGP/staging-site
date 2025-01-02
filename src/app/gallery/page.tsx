@@ -10,10 +10,30 @@ function Home() {
     "/gallery/Gallery2.jpg",
     "/gallery/Gallery3.jpg",
     "/gallery/Gallery4.jpg",
-    "/img3.jpg",
-    "/img2.jpg",
-    "/img1.jpg",
-    "/img4.jpg",
+    "/gallery/Gallery5.jpg",
+    "/gallery/Gallery6.jpg",
+    "/gallery/Gallery7.jpg",
+    "/gallery/Gallery8.jpg",
+    "/gallery/Gallery10.jpg",
+    "/gallery/Gallery11.jpg",
+    "/gallery/Gallery12.jpg",
+    "/gallery/Gallery13.jpg",
+    "/gallery/Gallery14.jpg",
+    "/gallery/Gallery15.jpg",
+    "/gallery/Gallery16.jpg",
+    "/gallery/Gallery17.jpg",
+    "/gallery/Gallery18.jpg",
+    "/gallery/Gallery19.jpg",
+    "/gallery/Gallery20.jpg",
+    "/gallery/Gallery21.jpg",
+    "/gallery/Gallery22.jpg",
+    "/gallery/Gallery23.jpg",
+    "/gallery/Gallery24.jpg",
+    "/gallery/Gallery25.jpg",
+    // "/img3.jpg",
+    // "/img2.jpg",
+    // "/img1.jpg",
+    // "/img4.jpg",
   ]);
   const [clas, setClas] = useState("");
   const timeAutoNext = 4000;
@@ -140,7 +160,7 @@ function Home() {
         <div className="">
           <div className="arrows absolute top-[45%] left-10 z-50  ">
             <button
-              className={`w-[40px] h-[40px] rounded-full bg-[#eeeeee24] border-0 text-white font-mono font-bold transition duration-500 hover:bg-white hover:text-black ${
+              className={`w-[40px] h-[40px] rounded-full bg-[#eeeeee5d] border-0 text-white font-mono font-bold transition duration-500 hover:bg-white hover:text-black ${
                 clas === "next" ? "pointer-events-none" : ""
               } ${clas === "prev" ? "pointer-events-none" : ""}`}
               id="prev"
@@ -151,7 +171,7 @@ function Home() {
           </div>
           <div className="arrows absolute top-[45%] right-10 z-50">
             <button
-              className={`w-[40px] h-[40px] rounded-full bg-[#eee4] border-0 text-white font-mono font-bold transition duration-500 hover:bg-white hover:text-black ${
+              className={`w-[40px] h-[40px] rounded-full bg-[#eeeeee5f] border-0 text-white font-mono font-bold transition duration-500 hover:bg-white hover:text-black ${
                 clas === "next" ? "pointer-events-none" : ""
               } ${clas === "prev" ? "pointer-events-none" : ""}`}
               id="next"
