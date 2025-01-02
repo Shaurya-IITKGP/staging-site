@@ -1,4 +1,3 @@
-
 "use client";
 import TeamsPage2 from "../Components/new";
 import CardsmobileComponent from "../Components/mobile_teams_component";
@@ -69,52 +68,52 @@ export default function Home() {
         {/* Sidebar and Content */}
         <div className="flex z-20 k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
           {/* Sidebar */}
-          <div className="bg-amber-950 font-semibold bg-opacity-75 p-4 border-l-0 border-2 border-[#d4ad75]">
-            <ul className="hover:text-white cursor-pointer z-40 text-white space-y-4">
+          <div className="bg-amber-950 font-semibold bg-opacity-75 p-6 border-l-0 border-2 border-[#d4ad75] rounded-r-lg shadow-lg">
+            <ul className="cursor-pointer z-40 text-[#d4ad75] space-y-6 font-['Cinzel'] text-lg">
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("executives")}
               >
                 Executives
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("finance")}
               >
                 Finance
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("events")}
               >
                 Events
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("web")}
               >
                 Web
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("publicity")}
               >
                 Publicity And Marketing
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("sponsor")}
               >
                 Sponsorship
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("logistics")}
               >
                 Logistics
               </li>
               <li
-                className="hover:bg-amber-950 hover:scale-110 p-2 rounded"
+                className="hover:text-white hover:bg-amber-900 hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("design")}
               >
                 Design
@@ -135,11 +134,48 @@ export default function Home() {
       </div>
 
       {/* Mobile Version */}
-      <div className="flex justify-center items-center w-screen ml-0 k2:hidden">
-        <CardsmobileComponent team={team} />
+      <div className="flex z-20 mt-32 justify-center items-center w-screen ml-0 k2:hidden">
+       <CardsmobileComponent team={team}/>
       </div>
     </div>
   );
 }
 
+/*
+ <div className="flex mt-8 justify-center items-center w-screen ml-0 k2:hidden">
+        <div className="flex flex-col gap-8">
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Executives</h2>
+            <CardsmobileComponent team={team.slice(0,3)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Finance</h2>
+            <CardsmobileComponent team={team.slice(3,5)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Events</h2>
+            <CardsmobileComponent team={team.slice(5,8)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Web</h2>
+            <CardsmobileComponent team={team.slice(8,10)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Publicity And Marketing</h2>
+            <CardsmobileComponent team={team.slice(10,13)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Logistics</h2>
+            <CardsmobileComponent team={team.slice(13,16)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Design</h2>
+            <CardsmobileComponent team={team.slice(16,19)} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-['Cinzel'] text-[#d4ad75] text-center mb-4">Sponsorship</h2>
+            <CardsmobileComponent team={team.slice(19)} />
+          </div>
+        </div>
+      </div>*/ 
 
