@@ -141,6 +141,20 @@ const events: Event[] = [
     image: "/POWERLIFTING.png",
   },
   {
+    title: "WeightLifting",
+    description: "Show your agility in badminton.",
+    rules: [
+      "Each team is allowed to enter max 2-3 (to be finalised) participants in each category.",
+      "Men’s categories: Under 56kg, 57-62, 63-69, 70-77, Above 77(open)",
+      "Event format: The competition involves two types of lifts:",
+      "Snatch: A single, continuous motion where the barbell is lifted from the ground to overhead.",
+      "Clean and Jerk: A two-part lift, where the athlete first lifts the bar to shoulder height (clean) and then pushes it overhead (jerk).",
+      "Each lifter has three attempts in each lift, with their best successful lift in each category being counted for the total.",
+      
+    ],
+    image: "/POWERLIFTING.png",
+  },
+  {
     title: "Squash",
     description: "Show your agility in badminton.",
     rules: [
@@ -194,7 +208,7 @@ const EventsPage: React.FC = () => {
             layout="fill"
             objectFit="cover"
             priority // Ensures the image is loaded quickly
-            style={{ opacity: 50 }}
+            style={{ opacity: 0.2 }}
           />
         </div>
 
@@ -250,7 +264,7 @@ const EventsPage: React.FC = () => {
                         <div className="bg-yellow-500 filter blur-md w-4 h-full animate-sword-slash absolute opacity-0 top-0"></div>
                       </div>
                       {/* Content Section */}
-                      <div className="p-5 absolute top-64 bg-transparent z-10">
+                      <div className="p-5 absolute top-80 bg-transparent z-10">
                         {" "}
                         <button
                           className="bottom-0 items-end w-48 ml-3 bg-amber-950 bg-opacity-75 text-white py-2 px-4 rounded-lg font-semibold hover:bg-white hover:text-black hover:bg-opacity-30 transition-all"
@@ -271,7 +285,7 @@ const EventsPage: React.FC = () => {
 
         {/* Modal */}
         {selectedEvent && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-hidden z-50">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-hidden z-[1001]">
             <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md lg:overflow-hidden">
               <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle">
                 <div className="w-full md:w-1/2 md:h-full h-[40vh]">
