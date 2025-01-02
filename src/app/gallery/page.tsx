@@ -7,7 +7,6 @@ import Image from "next/image";
 function Home() {
   const [images, setImages] = useState([
     "/gallery/Gallery1.jpg",
-    "/gallery/Gallery2.jpg",
     "/gallery/Gallery3.jpg",
     "/gallery/Gallery4.jpg",
     "/gallery/Gallery5.jpg",
@@ -81,7 +80,7 @@ function Home() {
   };
 
   return (
-    <div className="App overflow-hidden">
+    <div className={isMobile?"App bg-gray-600 bg-opacity-50 overflow-hidden":"App  overflow-hidden"}>
       {" "}
       {/* Removed overflow-x and overflow-y */}
       <div className={`carousel${clas}`}>

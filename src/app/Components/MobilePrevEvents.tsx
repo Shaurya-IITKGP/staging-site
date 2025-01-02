@@ -50,7 +50,7 @@ const MobileCompetitions = () => {
                             className="w-full  object-cover rounded-t-xl"
                         />
                         <h2 className="text-2xl text-yellow-400 font-bold text-center mt-4">{competition.title}</h2>
-                        <p className="text-white font-bold text-base leading-relaxed  mt-2 text-justify">
+                        <p className="text-white font-normal text-base tracking-tight leading-relaxed  mt-2 text-justify">
                             {competition.description}
                         </p>
                     </div>

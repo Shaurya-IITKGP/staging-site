@@ -58,7 +58,14 @@ const Footer = () => {
                     <Link href="/events">Events</Link>
                   </li>
                   <li className="hover:translate-x-2 transition-transform hover:text-[#D4A76A]">
-                    <Link href="/contact">CA</Link>
+                  <a
+                href="https://ca.shauryaiitkgp.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D4A76A]"
+                >
+                  CA
+                </a>
                   </li>
                 </ul>
               </div>

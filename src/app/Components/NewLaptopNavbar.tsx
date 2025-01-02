@@ -41,7 +41,7 @@ const NewNavbar = () => {
               whileTap={{ scale: 0.95 }}
               className="cursor-pointer"
             >
-              <Link href="/mainPage" className="hover:text-gray-400">
+              <Link href="/" className="hover:text-gray-400">
                 Home
               </Link>
             </motion.div>
@@ -72,7 +72,7 @@ const NewNavbar = () => {
           </div>
 
           {/* Logo */}
-          <Link href="/mainPage" className="flex items-center justify-center">
+          <Link href="/" className="flex items-center justify-center">
             <Image
               src="/Shaurya_Logo.png"
               alt="Shaurya Logo"
