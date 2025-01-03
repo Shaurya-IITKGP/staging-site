@@ -46,7 +46,7 @@ const Animate = () =>{
     },{scope:container});
 
     return(
-        <div ref={container} className="flex sm:justify-center  min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
+        <div ref={container} className="flex sm:justify-center md:mt-0 mt-12 min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
             <div className="flex flex-wrap justify-center gap-2">
                 {text.slice(0,4).map((item, index) => (
                     <span 
