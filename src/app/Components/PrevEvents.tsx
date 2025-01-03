@@ -230,7 +230,7 @@ const Competitions = () => {
                                     <Image
                                        height={100}
                                        width={100}
-                                        src="/shauryaIntroSeminar.png" 
+                                        src="/shaurya_intro_sem.png" 
                                         alt=""
                                         className="w-full h-full object-cover rounded-lg shadow-xl"
                                     />
