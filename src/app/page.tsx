@@ -61,7 +61,7 @@ const page = () => {
             <div className="flex justify-center">
               <div className="relative">
                 <Image
-                  src="/Shaurya_Title_20255.png"
+                  src="/Shaurya_Title_2025.png"
                   alt="Shaurya Logo"
                   width={600}
                   height={150}

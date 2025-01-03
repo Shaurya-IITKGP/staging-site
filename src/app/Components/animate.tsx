@@ -10,11 +10,10 @@ const Animate = () =>{
         { text: 'I' },
         { text: 'S' },
         { text: 'E' },
-        { text: 'A' },
-        { text: 'B' }, // adding space between words
-        { text: 'O' },
-        { text: 'V' },
-        { text: 'E' },
+        { text: 'W' },
+        { text: 'I' }, // adding space between words
+        { text: 'T' },
+        { text: 'H' },
         { text: ' ' },
         { text: 'S' },
         { text: 'H' },
