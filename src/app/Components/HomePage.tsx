@@ -9,7 +9,7 @@ const Footer = dynamic(() => import('./footer'));
 const Animate = dynamic(() => import('./animate'));
 // const Competitions = dynamic(() => import('./competition'));
 const About = dynamic(()=>import("./about"));
-const AnimatedNavbar = dynamic(() => import('./Navbar'));
+// const AnimatedNavbar = dynamic(() => import('./Navbar'));
 const Esports = dynamic(() => import('./esportsAnimation'), {
   loading: () => <div className="animate-pulse bg-gray-700 h-96"></div>
 });
