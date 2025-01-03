@@ -38,7 +38,7 @@ const MobileCompetitions = () => {
 
     return (
         <div className="p-4">
-            {/* <h1 className="text-3xl font-bold text-yellow-400 text-center mb-8">Competitions</h1> */}
+            <h1 className="text-3xl font-bold text-yellow-400 text-center mb-8">Competitions</h1>
             <div className="flex flex-col space-y-4">
                 {competitions.map((competition, index) => (
                     <div key={index} className="bg-amber-50/30 rounded-xl z-20 shadow-lg p-4 border-2 border-amber-100/50">
