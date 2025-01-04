@@ -51,9 +51,7 @@ const Competitions = () => {
             <div className="overflow-hidden">
                 <div ref={container} className="events p-8">
                     <div className="heading-container w-full">
-                    <h1 className="text-6xl z-40 md:text-6xl mt-16 text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">
-          Previous Events
-        </h1>
+                  
                        
                     </div>
                     <div className="flex">
