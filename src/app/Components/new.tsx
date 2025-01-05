@@ -41,7 +41,8 @@ const TeamsPage2: React.FC<TeamsPage2Props>= ({arr}) => {
     <div className="flex justify-center items-center min-h-screen mr-20 mt-6">
          <div className="w-[600px] h-[600px] border-2 border-white rounded-full flex justify-center items-center relative">
                {myArray.map((i) => (
-                <div className="absolute -left-10 z-50" key={i} style={{transform:`rotate(calc((360deg * (${i} - 1))/${n}))`, transformOrigin:"340px"}} onMouseOver={() => handleMouseOver(i - 1)}>
+                <div className="absolute -left-10 z-50" key={i} style={{transform:`rotate(calc((360deg * (${i} - 1))/${n}))`, transformOrigin:"340px"}} onMouseOver={() => handleMouseOver(i - 1)}
+                onMouseLeave={handleMouseLeave}>
 
                     <div className={`${activeIndex==i-1?'border-red-700 border-4':'border-white border-2'} w-24 h-24 rounded-full flex justify-center items-center transition-all duration-300`}>
                      <Image
