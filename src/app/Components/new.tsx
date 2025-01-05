@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "./TeamsPage.css"
+import Image from "next/image";
 
 interface TeamsPage2Props {
   arr: string[][];
@@ -23,7 +24,9 @@ const TeamsPage2: React.FC<TeamsPage2Props>= ({arr}) => {
                {myArray.map((i) => (
                 <div className="absolute -left-10 z-50" key={i} style={{transform:`rotate(calc((360deg * (${i} - 1))/${n}))`, transformOrigin:"340px"}} onMouseOver={() => handleMouseOver(i - 1)}>
                     <div className={`${activeIndex==i-1?'border-red-700 border-4':'border-white border-2'} w-24 h-24 rounded-full flex justify-center items-center transition-all duration-300`}>
-                     <img
+                     <Image
+                     width={100}
+                     height={100}
                         key={i}
                         src={`./team_pics/${arr[i-1][0]}.jpg`}
                         alt={`arr[i][0]`}
@@ -38,17 +41,17 @@ const TeamsPage2: React.FC<TeamsPage2Props>= ({arr}) => {
                       <div className="flex justify-center items-center">
                          {myArray.map((i)=>(
                          <div key={i} className={`w-72 h-72 object-cover transition-all absolute duration-500 flex justify-center items-center flex-col gap-1 ${activeIndex==i-1?'scale-100 z-40':'scale-0 z-0'}`}> 
-                             <img src={`./team_pics/${arr[i-1][0]}.jpg`} alt={`Image${i}`} className="rounded-3xl w-40 h-56 object-cover"/> 
+                             <Image width={100} height={100} src={`./team_pics/${arr[i-1][0]}.jpg`} alt={`Image${i}`} className="rounded-3xl w-40 h-56 object-cover"/> 
 
                              <h2 className="font-bold text-2xl text-center font-sans">{arr[i-1][0]}</h2>
 
                              <span className="text-center font-extralight text-sm">{arr[i-1][1]}</span>
 
                              <div className="flex flex-row gap-1">
-                                <a href={`${arr[i-1][2]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./instagram.png" className=""/></a>
-                                <a href={`${arr[i-1][4]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./linkedin.png" className=""/></a>
-                                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${arr[i-1][5]}`} target="_blank" className="w-8 h-8 object-cover"><img src="./mail.png" className=""/></a>
-                                {/* <a href={`${arr[i-1][3]}`} className="w-8 h-8 object-cover" target="_blank"><img src="./facebook.png" className=""/></a> */}
+                                <a href={`${arr[i-1][2]}`} className="w-8 h-8 object-cover" target="_blank"><Image width={100} height={100} src="./instagram.png" alt="instagram" className=""/></a>
+                                <a href={`${arr[i-1][4]}`} className="w-8 h-8 object-cover" target="_blank"><Image width={100} height={100} src="./linkedin.png" alt="linkedin" className=""/></a>
+                                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${arr[i-1][5]}`} target="_blank" className="w-8 h-8 object-cover"><Image width={100} height={100} src="./mail.png" alt="main" className=""/></a>
+                                {/* <a href={`${arr[i-1][3]}`} className="w-8 h-8 object-cover" target="_blank"><Image src="./facebook.png" className=""/></a> */}
                              </div>
                          </div> ))}
                       </div>
