@@ -6,14 +6,16 @@ import gsap from "gsap";
 
 const Animate = () =>{
     const text = [
-        { text: 'R' },
-        { text: 'I' },
-        { text: 'S' },
+        { text: 'U' },
+        { text: 'N' },
+        { text: 'L' },
         { text: 'E' },
-        { text: 'W' },
-        { text: 'I' }, // adding space between words
+        { text: 'A' },
+        { text: 'S' }, // adding space between words
+        { text: 'H' },
         { text: 'T' },
         { text: 'H' },
+        { text: 'E' },
         { text: ' ' },
         { text: 'S' },
         { text: 'H' },
@@ -21,13 +23,7 @@ const Animate = () =>{
         { text: 'U' },
         { text: 'R' },
         { text: 'Y' },
-        { text: 'A' }
-
-
-
-
-
-,
+        { text: 'A' },
     ];
     const container = useRef(null);
 
@@ -48,7 +44,7 @@ const Animate = () =>{
     return(
         <div ref={container} className="flex sm:justify-center md:mt-0 mt-12 min-h-[200px] gap-2 flex-col scale-125 xs:flex-row xs:scale-100 xs:gap-8 ">
             <div className="flex flex-wrap justify-center gap-2">
-                {text.slice(0,4).map((item, index) => (
+                {text.slice(0,7).map((item, index) => (
                     <span 
                         key={index} 
                         className="ancient-letter text-xs md:text-xl font-serif
@@ -64,7 +60,7 @@ const Animate = () =>{
                 ))}
             </div>
             <div className="flex flex-wrap justify-center gap-2">
-                {text.slice(4).map((item, index) => (
+                {text.slice(7).map((item, index) => (
                     <span 
                         key={index} 
                         className="ancient-letter text-xs md:text-xl font-serif
