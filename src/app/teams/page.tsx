@@ -36,11 +36,11 @@ export default function Home() {
     ['Sudhanshu Kumar', 'Events', 'https://www.instagram.com/kr_.sud?igsh=aXRubnlidGlxb3A1', '', 'http://linkedin.com/in/sudhanshu-kumar-094b10273', 'sudhanshukr.shaurya.iitkgp@gmail.com'],
     ['Matthews Bonthu', 'Events', 'https://www.instagram.com/matthews_bonthu/', '', 'https://www.linkedin.com/in/matthews-bonthu-99b32719b/', 'matthews.bonthu@shauryaiitkgp.in'],
     ['Indrajeet Kumar', 'Events', 'https://www.instagram.com/_indrajeetkumar_/profilecard/?igsh=MXI3cWdodm54NHo1cQ==', 'https://www.facebook.com/profile.php?id=100086280951357&mibextid=ZbWKwL', 'https://www.linkedin.com/in/indrajeet-kumar-050919259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'knp.indrajeetkumar@gmail.com'],
-    ['Sahil Sinha', 'Web', 'https://www.instagram.com/sahilsinha_11/', 'https://www.facebook.com/profile.php?id=100088538255044', 'https://www.linkedin.com/in/sahil-sinha-a53b4925a/', 'sahilsinha.shaurya.iitkgp@gmail.com'],
-    ['Pranjul Shukla', 'Web', 'https://www.instagram.com/captaincoro11/?hl=en', '','https://www.linkedin.com/in/pranjul-shukla-219772258/', 'captaincoro444@gmail.com' ,'https://drive.google.com/file/d/1FkmZOGQrdKocy8Zopry4l1fzVJl4eH3a/view?usp=drive_link'],
-    ['Rakesh Tella', 'Publicity', 'https://www.instagram.com/rakesh_tella/', 'https://www.facebook.com/share/4b2k7qVANWJ5C5Z9/', 'https://in.linkedin.com/in/rakesh-tella8', 'rakesh.tella@shauryaiitkgp.in'],
-    ['Hemant Kamble', 'Publicity', 'https://www.instagram.com/h_v_kamble/profilecard/?igsh=cWU4Z3Qzb25oNDZt', 'https://www.facebook.com/hemant.kamble.9803150?mibextid=kFxxJD', 'https://www.linkedin.com/in/hemant-kamble-7b5378229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'hemantkamble.shaurya.iitkgp@gmail.com'],
-    ['Tuhsin Suhana Rahman', 'Publicity', 'https://www.instagram.com/tuhsin13/', 'https://www.facebook.com/profile.php?id=100086747262244', 'https://www.linkedin.com/in/tuhsin-suhana-rahman-5573a8251/', 'tuhsinsrahman.shaurya.iitkgp@gmail.com'],
+    ['Sahil Sinha', 'Tech', 'https://www.instagram.com/sahilsinha_11/', 'https://www.facebook.com/profile.php?id=100088538255044', 'https://www.linkedin.com/in/sahil-sinha-a53b4925a/', 'sahilsinha.shaurya.iitkgp@gmail.com'],
+    ['Pranjul Shukla', 'Tech', 'https://www.instagram.com/captaincoro11/?hl=en', '','https://www.linkedin.com/in/pranjul-shukla-219772258/', 'captaincoro444@gmail.com' ,'https://drive.google.com/file/d/1FkmZOGQrdKocy8Zopry4l1fzVJl4eH3a/view?usp=drive_link'],
+    ['Rakesh Tella', 'Publicity And Marketing', 'https://www.instagram.com/rakesh_tella/', 'https://www.facebook.com/share/4b2k7qVANWJ5C5Z9/', 'https://in.linkedin.com/in/rakesh-tella8', 'rakesh.tella@shauryaiitkgp.in'],
+    ['Hemant Kamble', 'Publicity And Marketing', 'https://www.instagram.com/h_v_kamble/profilecard/?igsh=cWU4Z3Qzb25oNDZt', 'https://www.facebook.com/hemant.kamble.9803150?mibextid=kFxxJD', 'https://www.linkedin.com/in/hemant-kamble-7b5378229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'hemantkamble.shaurya.iitkgp@gmail.com'],
+    ['Tuhsin Suhana Rahman', 'Publicity And Marketing', 'https://www.instagram.com/tuhsin13/', 'https://www.facebook.com/profile.php?id=100086747262244', 'https://www.linkedin.com/in/tuhsin-suhana-rahman-5573a8251/', 'tuhsinsrahman.shaurya.iitkgp@gmail.com'],
     ['Kushal Kushwaha', 'Logistics', 'https://www.instagram.com/kushalkushwaha37/profilecard/?igsh=emZnb2Q2OWMwem1r', '', 'https://www.linkedin.com/in/kushal-kushwaha-223055278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'kushal.shaurya.iitkgp@gmail.com'],
     ['Ayush Garg', 'Logistics', 'https://www.instagram.com/gargayush.2412/', 'https://www.facebook.com/profile.php?id=100087253047803', 'https://www.linkedin.com/in/ayush-garg-527710316', 'ayushgarg.shaurya.iitkgp@gmail.com'],
     ['Pranjal Kanodia', 'Logistics', 'https://www.instagram.com/pranjalkanodia012/', '', 'https://www.linkedin.com/in/pranjal-kanodia-53a738264', 'pranjalkanodia11@gmail.com'],
@@ -93,7 +93,7 @@ export default function Home() {
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("web")}
               >
-                Web
+                Tech
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"

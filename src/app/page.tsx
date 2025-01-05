@@ -15,7 +15,7 @@ const page = () => {
   // Check the window width and update state
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1050);
+      setIsMobile(window.innerWidth < 1200);
     };
 
     // Initial check

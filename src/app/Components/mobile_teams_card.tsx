@@ -36,16 +36,16 @@ const CardMobile: React.FC<Cardprops> = ({ name, portfolio, i, l, f, m }) => {
         <div className="h-[10%] w-full flex justify-center items-center bg-white bg-opacity-90">
           <div className="flex gap-6">
             <a href={i} className="w-7 h-7 hover:scale-110 transition-transform">
-              <img src="./instagram.png" className="w-full h-full object-contain" alt="Instagram" />
+              <Image width={100} height={100} src="./instagram.png" className="w-full h-full object-contain" alt="Instagram" />
             </a>
             <a href={l} className="w-7 h-7 hover:scale-110 transition-transform">
-              <img src="./linkedin.png" className="w-full h-full object-contain" alt="LinkedIn" />
+              <Image width={100} height={100} src="./linkedin.png" className="w-full h-full object-contain" alt="LinkedIn" />
             </a>
             <a
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${m}`}
               className="w-7 h-7 hover:scale-110 transition-transform"
             >
-              <img src="./mail.png" className="w-full h-full object-contain" alt="Mail" />
+              <Image width={100} height={100} src="./mail.png" className="w-full h-full object-contain" alt="Mail" />
             </a>
           </div>
         </div>
