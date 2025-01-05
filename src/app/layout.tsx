@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import AnimatedNavbar from "./Components/Navbar";
+// import AnimatedNavbar from "./Components/Navbar";
 
 import { Poppins } from 'next/font/google';
 import MainNavBar from "./Components/MainNavBar";

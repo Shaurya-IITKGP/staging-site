@@ -77,6 +77,10 @@ const NewMobileNavbar = () => {
                 </div>
               </motion.a>
             ))}
+             <div className="flex justify-center"><div onClick={handleMenuToggle} className="flex justify-center items-center py-4 px-4 text-base font-medium
+                                    border border-lightOrange/30 hover:border-lightOrange/50 mb-2
+                                    bg-gradient-to-b from-black/60 to-black/40
+                                    text-white hover:text-white transition-all duration-300 w-14 h-14 mt-10 rounded-full"><img src="./x.png"/></div></div>
           </motion.nav>
         )}
       </AnimatePresence>

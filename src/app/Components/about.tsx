@@ -57,10 +57,10 @@ const About = () => {
   <tbody>
     <tr className="font-bold text-yellow-400">
       <td className="px-4 py-2 text-center">
-        <div className="w-full">100K+</div>
+        <div className="w-full">50K+</div>
       </td>
       <td className="px-4 py-2 text-center">
-        <div className="w-full">10M+</div>
+        <div className="w-full">1M+</div>
       </td>
       <td className="px-4 py-2 text-center">
         <div className="w-full">3</div>
@@ -101,10 +101,10 @@ const About = () => {
     </tr>
     <tr className="font-bold text-yellow-400">
       <td className="px-4 py-2 text-center">
-        <div className="w-full">450+</div>
+        <div className="w-full">45+</div>
       </td>
       <td className="px-4 py-2 text-center">
-        <div className="w-full">4500+</div>
+        <div className="w-full">1000+</div>
       </td>
       <td className="px-4 py-2 text-center">
         <div className="w-full">75+</div>

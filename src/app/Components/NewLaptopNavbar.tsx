@@ -42,7 +42,7 @@ const NewNavbar = () => {
               className="cursor-pointer"
             >
               <Link href="/" className="hover:text-gray-400">
-                Home
+                HOME
               </Link>
             </motion.div>
             <motion.div
