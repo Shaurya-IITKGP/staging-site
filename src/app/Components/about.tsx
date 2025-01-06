@@ -15,13 +15,13 @@ const About = () => {
           {/* YouTube video thumbnail with YouTube logo in the center */}
           <div className=" w-12/12  relative shadow-lg shadow-yellow-500 rounded-md mt-12">
             <a
-              href="https://youtu.be/ulk1aol4IL0?si=XG1smyb7HTY5efYK"
+              href="https://youtu.be/bsR_DuxXbns?si=woxGdslzNNxKFK6V"
               target="_blank"
               rel="noopener noreferrer"
             >
               {/* YouTube Thumbnail */}
               <Image
-                src="https://i.ytimg.com/vi/ulk1aol4IL0/mqdefault.jpg"
+                src="https://i.ytimg.com/an_webp/bsR_DuxXbns/mqdefault_6s.webp?du=3000&sqp=COee8LsG&rs=AOn4CLAyRYg-EkqYehBUfiNPw4aUuiw68Q"
                 alt="YouTube Video Thumbnail"
                 width={480}
                 height={270}
@@ -67,7 +67,7 @@ const About = () => {
       </td>
     </tr>
     <tr>
-      <td className="px-4 py-2 text-center">
+      <td className="px-4 py-2 text-center text-white">
         <div className="w-full">FootFalls</div>
       </td>
       <td className="px-4 py-2 text-center">
@@ -111,7 +111,7 @@ const About = () => {
       </td>
     </tr>
     <tr>
-      <td className="px-4 py-2 text-center">
+      <td className="px-4 py-2 text-center text-white">
         <div className="w-full">Colleges</div>
       </td>
       <td className="px-4 py-2 text-center">
