@@ -67,7 +67,7 @@ const Page = () => {
     <tbody>
       <tr>
         <td className="px-4 py-2 text-center">100K+</td>
-        <td className="px-4 py-2 text-center">10M+</td>
+        <td className="px-4 py-2 text-center">1M+</td>
         <td className="px-4 py-2 text-center">3</td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@ const Page = () => {
   <table className='w-full'>
     <tbody>
       <tr>
-        <td className="px-4 py-2 text-center">100K+</td>
+        <td className="px-4 py-2 text-center">45K+</td>
         <td className="px-4 py-2 text-center">10M+</td>
         <td className="px-4 py-2 text-center">3</td>
       </tr>
