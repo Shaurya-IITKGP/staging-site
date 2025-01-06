@@ -351,52 +351,53 @@ const EventsPage: React.FC = () => {
 
         {/* Modal */}
         {selectedEvent && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-hidden z-[1001]">
-            <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md lg:overflow-hidden">
-              <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle">
-                <div className="w-full md:w-1/2 md:h-full h-[40vh]">
-                  <Image
-                    height={100}
-                    width={100}
-                    src={selectedEvent.image}
-                    alt={selectedEvent.title}
-                    className="w-full h-full object-contain object-center my-auto"
-                  />
-                </div>
+  <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-scroll z-[1001]" style={{scrollbarWidth:"none"}}>
+    <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md h-full">
+      <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle bg-black bg-opacity-70">
+        <div className="w-full md:w-1/2 md:h-full h-[40vh]">
+          <Image
+            height={100}
+            width={100}
+            src={selectedEvent.image}
+            alt={selectedEvent.title}
+            className="w-full h-full object-contain object-center my-auto"
+          />
+        </div>
 
-                <div className="w-full md:w-1/2 h-auto p-6 flex flex-col justify-between">
-                  <h2 className="text-lg uppercase font-bold mb-2">
-                    {selectedEvent.title}
-                  </h2>
-                  <div className="my-auto">
-                    <h2 className="text-md font-bold mb-2">Rules</h2>
-                    <ul className="">
-                      {selectedEvent.rules.map((rule, index) => (
-                        <li
-                          key={index}
-                          className={`${
-                            index % 2 == 1
-                              ? "text-md font-bold mt-2 pr-5"
-                              : "list-disc ml-5"
-                          }`}
-                        >
-                          {rule}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <br />
-                  <button
-                    className="w-2/5 mt-2 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
-                    onClick={handleCloseModal}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div className="w-full md:w-1/2 h-auto p-6 flex flex-col justify-between overflow-auto">
+          <h2 className="text-lg uppercase font-bold mb-2">
+            {selectedEvent.title}
+          </h2>
+          <div className="my-auto">
+            <h2 className="text-md font-bold mb-2">Rules</h2>
+            <ul className="w-full">
+              {selectedEvent.rules.map((rule, index) => (
+                <li
+                  key={index}
+                  className={`${
+                    index % 2 === 1
+                      ? "text-md font-bold mt-2 pr-5"
+                      : "list-disc ml-5"
+                  }`}
+                >
+                  {rule}
+                </li>
+              ))}
+            </ul>
           </div>
-        )}
+          <br />
+          <button
+            className="w-2/5 mt-2 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
+            onClick={handleCloseModal}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
       </div>
       <Footer />
     </>
