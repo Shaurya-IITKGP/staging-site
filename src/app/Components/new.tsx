@@ -66,9 +66,9 @@ const TeamsPage2: React.FC<TeamsPage2Props>= ({arr}) => {
                          <div key={i} className={`w-72 h-72 object-cover transition-all absolute duration-500 flex justify-center items-center flex-col gap-1 ${activeIndex==i-1?'scale-100 z-40':'scale-0 z-0'}`}> 
                              <Image width={100} height={100} src={`./team_pics/${arr[i-1][0]}.jpg`} alt={`Image${i}`} className="rounded-3xl w-40 h-56 object-cover"/> 
 
-                             <h2 className="font-bold text-2xl text-center font-sans">{arr[i-1][0]}</h2>
+                             <h2 className="font-bold text-2xl text-center text-white font-sans">{arr[i-1][0]}</h2>
 
-                             <span className="text-center font-extralight text-sm">{arr[i-1][1]}</span>
+                             <span className="text-center font-extralight text-white text-sm">{arr[i-1][1]}</span>
 
                              <div className="flex flex-row gap-1">
                                 <a href={`${arr[i-1][2]}`} className="w-8 h-8 object-cover" target="_blank"><Image width={100} height={100} src="./instagram.png" alt="instagram" className=""/></a>
