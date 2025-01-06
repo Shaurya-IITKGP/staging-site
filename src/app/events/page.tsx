@@ -13,121 +13,129 @@ interface Event {
 
 const events: Event[] = [
   {
-    title: "Cricket",
-    description: "Experience the thrill of cricket matches.",
-    rules: [
-      "The format of the tournament will be League cum Knockout.",
-      "Number of Overs: 20.",
-      "Number of Players: Each team will consist of 11+5 players.",
-      "Minimum no. of teams: 8.",
-      "Maximum no. of teams: 10.",
-      "Average time for a single match: 3.5 - 4 hrs.",
-    ],
-    image: "/CRICKET.png",
-  },
-  {
-    title: "Football",
-    description: "Show your skills in the football tournaments.",
-    rules: [
-      "The format of the tournament will be league cum knockout.",
-      "Men:",
-      "No of players - Each team will consist of 11+5 players.",
-      "Timing - 25-10-25.",
-      "Women:",
-      "No of players - Each team will consist of 7+3 players.",
-      "Timing - 15-10-15.",
-    ],
-    image: "/FOOTBALL.png",
-  },
-  {
-    title: "Basketball",
-    description: "Shoot your shot in the basketball arena.",
-    rules: [
-      "Each match will have 4 quarters of 10 minutes (Male and Female).",
-      "Format: Round-Robin (participants will be eliminated or selected after certain results).",
-      "Number of Players: Each team should have a maximum of 12 players.",
-      "Minimum no. of teams: 6+6.",
-      "Maximum no. of teams: 8+8.",
-      "Total time for a single match: 1 hour.",
-    ],
-    image: "/BASKETBALL.png",
-  },
-  {
-    title: "Volleyball",
+    title: "Athletics",
     description: "Set, spike, and score in volleyball.",
     rules: [
-      "The format of the tournament will be League cum Knockout.",
-      "Number of Players: Each team will consist of 6+6 players.",
-      "Minimum no. of teams: 8.",
-      "Maximum no. of teams: 12.",
-      "Average time for a single match: 45 mins - 1 hour.",
+      "Number of Players:Maximum of 2 players per event from each collage Each player can participate in not more than 3 events(except relay)",
+
+      "Men's Events:",
+      "100m, 200m, 400m, 800m, 1500m, 4X100m, 4x400m, 110 m Hurdles, 400 m Hurdles, Long Jump, High Jump, Triple Jump, Shot Put, Hammer throw, Javelin throw, Discuss throw.",
+
+      "Women's Events:",
+      "100m, 200m, 400m, 800m, 1500m, 4X100m, 4X400m, Long Jump, High Jump, Shot Put, Javelin, Discuss throw.",
+
+      "Prize Pool:",
+      "Rs 39000",
+      "CONTACT:",
+      "Indrajeet Kumar (+91 7275282141)",
     ],
-    image: "/VOLLEYBALL.png",
-  },
-  {
-    title: "Tennis",
-    description: "Ace the tennis court with your skills.",
-    rules: [
-      "Matches will be played in the best-of-eight-games format.",
-      "The format will be League cum knockout.",
-      "Order of Matches:",
-      "Men: First Single/Double/Second Single.",
-      "Women: First Single/Double/Second Single.",
-      "Number of Players:",
-      "Men: Each team will have a maximum of 4 players.",
-      "Women: Each team will have a maximum of 3 players.",
-    ],
-    image: "/TENNIS.png",
+    image: "/ATHLETICS.png",
   },
   {
     title: "Badminton",
     description: "Show your agility in badminton.",
     rules: [
-      "Matches will be played in the best of three sets (each set of 21 points) format.",
+      "Matches will be played in the best of three sets(each set of 21 points) format",
       "Order of Matches:",
-      "Men: First Single/Second Single/First Double/Third Single/Second Double.",
-      "Women: First Single/Double/Second Single.",
+      "Men: First Single/Second Single/First Double/Third Single/Second Double",
+      "",
+      "Women: First Single/Double/Second Single",
       "Number of Players:",
-      "Men: Each college can have a maximum of 5 members in their team.",
-      "Women: Each college can have a maximum of 3 members in their team.",
+      "Men: Each college can have a max of 5 members in their team",
+      "",
+      "Women: Each college can have a maximum of 3 members in their team",
+      "Prize Pool:",
+      "Rs 28000",
+      "CONTACT:",
+      "Sudhanshu (+91 9931682446)",
     ],
     image: "/BADMINTON.png",
   },
   {
-    title: "Athletics",
-    description: "Set, spike, and score in volleyball.",
+    title: "Basketball",
+    description: "Shoot your shot in the basketball arena.",
     rules: [
-      "Number of players: Max of 2 participants per event from each college.",
-      "Each player can participate in not more than 3 events (except Relay).",
-      "Men's Events:",
-      "100m, 200m, 400m, 800m, 1500m, 4X100m, 4X400m, 110 m Hurdles, 400 m Hurdles, Long Jump, High Jump, Triple Jump, Shot Put, Hammer throw, Javelin throw, Discuss throw.",
-      "Women's Events:",
-      "100m, 200m, 400m, 800m, 1500m, 4X100m, 4X400m, Long Jump, High Jump, Shot Put, Javelin, Discuss throw.",
+      "Each Match will have 4 Quarters, 10 Min each(for both Men and Women). The format will be League cum Knockout",
+
+      "Number of Players:",
+      "Each team should have a maximum of 12 players.",
+
+      "Prize Pool:",
+      "Rs.59000",
+      "CONTACT:",
+      "Bonthu Matthews (+91 8688324518)",
     ],
-    image: "/ATHLETICS.png",
+    image: "/BASKETBALL.png",
   },
   {
     title: "Chess",
     description: "Ace the tennis court with your skills.",
     rules: [
-      "Format of the tournament will be Swiss League.",
-      "Number of Players: Each team will consist of 4 players.",
-      "Each match will consist of 4 boards.",
-      "The team with the most points across boards wins the match.",
-      "Minimum no. of teams: 6.",
-      "Maximum no. of teams: 8.",
+      "Unrated Chess Mixed Tournament",
+
+      "Event Format:",
+      "Round Robin(15|10)",
+
+      "Number of Players:",
+      "Each Team can have Max of 6 players and Min of 4 players",
+      "Prize Pool:",
+      "Rs.17500",
+      "CONTACT:",
+      "Bonthu Matthews (+91 8688324518)",
     ],
     image: "/CHESS.png",
+  },
+  {
+    title: "Cricket",
+    description: "Experience the thrill of cricket matches.",
+    rules: [
+      "The format of the tournament will be League cum Knockout.",
+      "Number of Overs:",
+      "20",
+      "Number of Players:",
+      "Each team will consist of 11+5 players.",
+      "Minimum no. of teams:",
+      "8",
+      "Maximum no. of teams:",
+      "10",
+      "Average time for a single match:",
+      "3.5 - 4 hrs.",
+      "CONTACT:",
+      "Aishwarya (+91 7819960702)",
+    ],
+    image: "/CRICKET.png",
+  },
+
+  {
+    title: "Football",
+    description: "Show your skills in the football tournaments.",
+    rules: [
+      "The format of the tournament will be League cum knockout(for both Men and Women)",
+      "Men:",
+      "No of players - Each team will consist of 11+5 players.",
+      "Women:",
+      "No of players - Each team will consist of 7+3 players.",
+      "Prize Pool:",
+      "Rs 58600",
+      "CONTACT:",
+      "Sudhanshu (+91 9931682446)",
+    ],
+    image: "/FOOTBALL.png",
   },
   {
     title: "Hockey",
     description: "Show your agility in badminton.",
     rules: [
-      "Format: League cum Knockout.",
-      "Timing: 20-5-20 (2 halves of 20 minutes each with a 5-minute break).",
-      "Number of Players: Each team will consist of 11+5 players.",
-      "Minimum no. of teams: 6.",
-      "Maximum no. of teams: 8.",
+      "Each match will have 4 quarters of 15min each",
+      "",
+      "The format of the tournament will be League cum knockout",
+      "Number of Players:",
+      "Each  team(men only) will have 11+5 players",
+      "Prize Pool:",
+      "Rs 17000",
+
+      "CONTACT:",
+      "Indrajeet Kumar  (+91 7275282141)",
     ],
     image: "/HOCKEY.png",
   },
@@ -136,22 +144,15 @@ const events: Event[] = [
     description: "Show your agility in badminton.",
     rules: [
       "Event format: Individual",
-      "There will be 3 events: Squat, Bench press, and Deadlift in the categories.",
-      "Men’s categories: Under 56kg, 57-62, 63-69, 70-77, Above 77(open)",
-    ],
-    image: "/POWERLIFTING.png",
-  },
-  {
-    title: "WeightLifting",
-    description: "Show your agility in badminton.",
-    rules: [
-      "Each team is allowed to enter max 2-3 (to be finalised) participants in each category.",
-      "Men’s categories: Under 56kg, 57-62, 63-69, 70-77, Above 77(open)",
-      "Event format: The competition involves two types of lifts:",
-      "Snatch: A single, continuous motion where the barbell is lifted from the ground to overhead.",
-      "Clean and Jerk: A two-part lift, where the athlete first lifts the bar to shoulder height (clean) and then pushes it overhead (jerk).",
-      "Each lifter has three attempts in each lift, with their best successful lift in each category being counted for the total.",
-      
+      "",
+
+      "There will be 3 events: Squat, Bench Press and Deadlift in thecategories as listed below.",
+      "Men’s categories:",
+      "Up to 56 kg, up to 62 kg, up to 69 kg, up to 77 kg, Above 77kg",
+      "Prize Pool:",
+      "Rs 3200",
+      "CONTACT:",
+      "Sudhanshu (+91 9931682446)",
     ],
     image: "/POWERLIFTING.png",
   },
@@ -159,29 +160,93 @@ const events: Event[] = [
     title: "Squash",
     description: "Show your agility in badminton.",
     rules: [
-      "Matches will be played in the best of three sets (each set of 21 points) format.",
-      "Order of Matches:",
-      "Men: First Single/Second Single/First Double/Third Single/Second Double.",
-      "Women: First Single/Double/Second Single.",
+      "Matches will be played individually in a Knockout format",
       "Number of Players:",
-      "Men: Each college can have a maximum of 5 members in their team.",
-      "Women: Each college can have a maximum of 3 members in their team.",
+      "Men's: Maximum number of Players 4",
+      "",
+      "Women's:Maximum number of Players 4",
+      "Prize Pool: ",
+      "Rs 12000",
+      "CONTACT:",
+      "Aishwarya (+91 7819960702)",
     ],
     image: "/SQUASH.png",
   },
   {
-    title: "TableTennis",
+    title: "Table Tennis",
     description: "Show your agility in badminton.",
     rules: [
-      "Matches will be played in the best of five games format (11 points each game).",
-      "Format of the tournament: League cum Knockout.",
-      "Number of  Players:",
-      "&nbsp- Men: Each team will consist of a maximum of 4 players.",
-      "- Women: Each team will consist of a maximum of 3 players.",
-      "- Minimum no. of teams: 6.",
-      "- Maximum no. of teams: 8.",
+      "Men's: The matches will be held on the basis of five singles.Each singles shall be played on a best of five game’s format with each game of 11points.The games will be played in ABC-XYZ format.",
+      "",
+      "Women's:  The matches will be held on the basis of two singles and one doubles.Each match will be played on a best of five game’s format with each game of 11 points.The games will be played in AB-XY format.",
+
+      "Men's:",
+      "Maximum of 4 players and minimum 3 players in a team",
+      "Women's:",
+      "Maximum of 3 players and minimum 2 players in a team",
+
+      "Prize Pool:",
+      "Rs 21500",
+
+      "CONTACT:",
+      "Aishwarya (+917819960702)",
     ],
     image: "/TABLETENNIS.png",
+  },
+  {
+    title: "Tennis",
+    description: "Ace the tennis court with your skills.",
+    rules: [
+      "Matches will be played in the best of three sets format.The format will be League cum Knockout",
+      "Order of Matches:",
+      "Men: First Single/Double/Second Single",
+      "",
+      "Women: First Single/Double/Second Single.",
+      "Number of Players:",
+      "Men: Each team will have a maximum of 4 players.",
+      "",
+      "Women: Each team will have a maximum of 3 players.",
+      "CONTACT:",
+      "Aishwarya (+91 7819960702)",
+    ],
+    image: "/TENNIS.png",
+  },
+
+  {
+    title: "Volleyball",
+    description: "Set, spike, and score in volleyball.",
+    rules: [
+      "The tournament shall be played on aLeague cum Knockout FormatMatches will be played in the best of 5 sets format",
+
+      "Number of Players:",
+      "Men's: Maximum of 12 players and minimum 6 players in a team",
+      "",
+      "Women's: Maximum of 12 players and minimum 6 players in a team",
+
+      "Prize Pool:",
+      "Rs 56000",
+
+      "CONTACT:",
+      "Bonthu Matthews  (+91 8688324518)",
+    ],
+    image: "/VOLLEYBALL.png",
+  },
+
+  {
+    title: "WeightLifting",
+    description: "Show your agility in badminton.",
+    rules: [
+      "Each team is allowed to enter at most 2 participants in each category",
+
+      "Men’s Weight Categories:",
+      "Up to 56 kg, up to 62 kg, up to 69 kg, up to 77 kg, Above 77kg",
+      "Prize Pool:",
+      " Rs 3200",
+
+      "CONTACT:",
+      "Sudhanshu (+91 9931682446)",
+    ],
+    image: "/POWERLIFTING.png",
   },
 
   // Add the rest of your 18 events here...
@@ -275,56 +340,66 @@ const EventsPage: React.FC = () => {
                         </button>
                       </div>
                       <h2 className="text-lg font-bold text-yellow-300 text-center mr-6">
-                          {event.title}
-                        </h2>{" "}
+                        {event.title}
+                      </h2>{" "}
                     </div>
                   ))}
               </div>
-            ),
+            )
           )}
         </div>
 
         {/* Modal */}
         {selectedEvent && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-hidden z-[1001]">
-            <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md lg:overflow-hidden">
-              <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle">
-                <div className="w-full md:w-1/2 md:h-full h-[40vh]">
-                  <Image
-                    height={100}
-                    width={100}
-                    src={selectedEvent.image}
-                    alt={selectedEvent.title}
-                    className="w-full h-full object-contain object-center my-auto"
-                  />
-                </div>
+  <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center overflow-scroll z-[1001]" style={{scrollbarWidth:"none"}}>
+    <div className="relative w-full md:w-[60vw] shadow-lg transform backdrop-blur-lg bg-transparent text-white rounded-md h-full">
+      <div className="flex flex-col md:flex-row justify-between items-stretch h-full align-middle bg-black bg-opacity-70">
+        <div className="w-full md:w-1/2 md:h-full h-[40vh]">
+          <Image
+            height={100}
+            width={100}
+            src={selectedEvent.image}
+            alt={selectedEvent.title}
+            className="w-full h-full object-contain object-center my-auto"
+          />
+        </div>
 
-                <div className="w-full md:w-1/2 h-auto p-6 flex flex-col justify-between">
-                  <h2 className="text-lg uppercase font-bold mb-2">
-                    {selectedEvent.title}
-                  </h2>
-                  <div className="my-auto">
-                    <h2 className="text-md font-bold mb-2">Rules</h2>
-                    <ul className="list-disc pl-5">
-                      {selectedEvent.rules.map((rule, index) => (
-                        <li key={index}>{rule}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <br />
-                  <button
-                    className="w-2/5 mt-2 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
-                    onClick={handleCloseModal}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div className="w-full md:w-1/2 h-auto p-6 flex flex-col justify-between overflow-auto">
+          <h2 className="text-lg uppercase font-bold mb-2">
+            {selectedEvent.title}
+          </h2>
+          <div className="my-auto">
+            <h2 className="text-md font-bold mb-2">Rules</h2>
+            <ul className="w-full">
+              {selectedEvent.rules.map((rule, index) => (
+                <li
+                  key={index}
+                  className={`${
+                    index % 2 === 1
+                      ? "text-md font-bold mt-2 pr-5"
+                      : "list-disc ml-5"
+                  }`}
+                >
+                  {rule}
+                </li>
+              ))}
+            </ul>
           </div>
-        )}
+          <br />
+          <button
+            className="w-2/5 mt-2 bg-white bg-opacity-70 text-black py-2 px-4 rounded transition-colors m-auto"
+            onClick={handleCloseModal}
+          >
+            Close
+          </button>
+        </div>
       </div>
-      <Footer/>
+    </div>
+  </div>
+)}
+
+      </div>
+      <Footer />
     </>
   );
 };
