@@ -24,7 +24,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Shaurya,IIT KGP",
+  title: "Shaurya IIT KGP",
   description: "Sports Fest Of Indian Institute of Technology Kharagpur",
   keywords: "Shaurya, Campus Ambassador, Career Growth, Leadership, Student Programs , IIT Kharagpur , IIT KGP , IIT kgp,Indian Institute of Technology Kharagpur",
   openGraph: {

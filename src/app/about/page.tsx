@@ -71,9 +71,9 @@ const Page = () => {
         <td className="px-4 py-2 text-center">3</td>
       </tr>
       <tr>
-        <td className="px-4 py-2 text-center">FootFalls</td>
-        <td className="px-4 py-2 text-center">EyeBalls</td>
-        <td className="px-4 py-2 text-center">Days</td>
+        <td className="px-4 py-2 text-center text-white">FootFalls</td>
+        <td className="px-4 py-2 text-center text-white">EyeBalls</td>
+        <td className="px-4 py-2 text-center text-white">Days</td>
       </tr>
     </tbody>
   </table>
@@ -89,9 +89,9 @@ const Page = () => {
         <td className="px-4 py-2 text-center">3</td>
       </tr>
       <tr>
-        <td className="px-4 py-2 text-center">FootFalls</td>
-        <td className="px-4 py-2 text-center">EyeBalls</td>
-        <td className="px-4 py-2 text-center">Days</td>
+        <td className="px-4 py-2 text-center text-white">FootFalls</td>
+        <td className="px-4 py-2 text-center text-white">EyeBalls</td>
+        <td className="px-4 py-2 text-center text-white">Days</td>
       </tr>
     </tbody>
   </table>
