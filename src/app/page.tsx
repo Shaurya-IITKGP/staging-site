@@ -83,12 +83,7 @@ const page = () => {
         </h1>
         {isMobile ? <MobileCompetitions /> : <Competitions />}
       </div>
-  <div className=" opacity-100 mb-20 bg-black ">
-        <h1 className="text-6xl z-40 md:text-6xl mt-16 text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">Campus Map</h1>
-        <div className=" flex justify-center">
-        <Image alt="campus_map" src='/CampusMap.png' height={100} width={100} className="w-[600px] h-[480px]"  />
-        </div>
-      </div>
+ 
       <Footer />
     </div>
   );
