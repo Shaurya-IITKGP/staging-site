@@ -365,7 +365,7 @@ const EventsPage: React.FC = () => {
         </div>
 
         <div className="w-full md:w-1/2 h-auto p-6 flex flex-col justify-between overflow-auto">
-          <h2 className="text-lg uppercase font-bold mb-2">
+          <h2 className="text-lg uppercase font-bold mt-2">
             {selectedEvent.title}
           </h2>
           <div className="my-auto">
