@@ -83,7 +83,7 @@ const page = () => {
         </h1>
         {isMobile ? <MobileCompetitions /> : <Competitions />}
       </div>
-
+ 
       <Footer />
     </div>
   );

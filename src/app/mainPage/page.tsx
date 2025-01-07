@@ -85,6 +85,11 @@ const page = () => {
         {isMobile ? <MobileCompetitions /> : <Competitions />}
       </div>
 
+      <div>
+        <h1 className="text-6xl z-40 md:text-6xl mt-16 text-center font-bold  text-yellow-400 mb-8 underline underline-offset-6">Campus Map</h1>
+        <Image alt="campus_map" src='/CampusMap.png' height={100} width={100} />
+      </div>
+
       <Footer />
     </div>
   );
