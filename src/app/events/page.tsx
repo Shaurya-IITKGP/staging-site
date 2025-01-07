@@ -246,7 +246,7 @@ const events: Event[] = [
       "CONTACT:",
       "Sudhanshu (+91 9931682446)",
     ],
-    image: "/POWERLIFTING.png",
+    image: "/WEIGHTLIFTING.png",
   },
 
   // Add the rest of your 18 events here...
