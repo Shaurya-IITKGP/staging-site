@@ -67,58 +67,58 @@ export default function Home() {
         </div>
 
         {/* Sidebar and Content */}
-        <div className="flex z-20 k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center">
+        <div className="flex z-20 k1:flex-row flex-col gap-10 k1:gap-0 justify-between items-center ">
           {/* Sidebar */}
-          <div className="bg-[#1a1716] bg-gradient-to-t from-[#070404] to-[#42221f] text-[#E6D5C3] bg-opacity-95 font-semibold p-6  border-l-0 border-2 border-[#d4ad75] rounded-r-lg shadow-lg">
+          <div className="bg-[#1a1716] bg-gradient-to-t from-[#070404] to-[#42221f] text-[#E6D5C3] bg-opacity-95 font-semibold p-6  border-l-0 border-2 border-[#d4ad75] rounded-r-lg shadow-lg mt-4">
             <ul className="cursor-pointer z-40 text-[#d4ad75] space-y-6 text-lg">
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("executives")}
               >
-                Executives
+                Executive Heads
               </li>
               
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("finance")}
               >
-                Finance
+                Finance Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("events")}
               >
-                Events
+                Event Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("web")}
               >
-                Tech
+                Tech Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("publicity")}
               >
-                Publicity And Marketing
+                Publicity And Marketing Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("sponsor")}
               >
-                Sponsorship
+                Sponsorship Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("logistics")}
               >
-                Logistics
+                Logistic Heads
               </li>
               <li
                 className="hover:text-white hover:bg-black hover:bg-opacity-30 hover:border-2 hover:border-[#d4ad75] hover:scale-105 p-3 rounded-md transition-all duration-300 ease-in-out text-xl"
                 onClick={() => handleSectionClick("design")}
               >
-                Design
+                Design Heads
               </li>
             </ul>
           </div>

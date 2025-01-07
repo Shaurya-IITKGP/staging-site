@@ -21,7 +21,7 @@ const About = () => {
             >
               {/* YouTube Thumbnail */}
               <Image
-                src="https://img.youtube.com/vi/bsR_DuxXbns/default.jpg"
+                src="/ShauryaYT.png"
                 alt="YouTube Video Thumbnail"
                 width={480}
                 height={270}
