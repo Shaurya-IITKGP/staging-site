@@ -278,7 +278,7 @@ const EventsPage: React.FC = () => {
           />
         </div>
 
-        <h1 className="text-4xl font-bold text-center mt-20 text-yellow-400">
+        <h1 className="text-4xl font-bold text-center mt-20 text-yellow-400 underline underline-offset-4">
           Shaurya Events
         </h1>
         <div className="space-y-12 px-4 mt-20">
