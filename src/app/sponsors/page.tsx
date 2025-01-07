@@ -46,7 +46,7 @@ const Sponsors: React.FC = () => {
         />
       </div>
 
-      <div className="flex justify-center items-center mt-32 text-4xl font-bold">
+      <div className="flex justify-center items-center mt-32 text-white text-4xl font-bold">
         Previous Sponsors
       </div>
 
