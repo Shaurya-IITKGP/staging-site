@@ -51,7 +51,7 @@ const Animate = () =>{
                         key={index} 
                         className="ancient-letter text-xs md:text-xl
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                        font-bold tracking-wider"
+                        font-bold tracking-tight md:tracking-wider "
                         style={{
                             textShadow: '0 0 5px rgba(193, 154, 107, 0.5)',
                             
