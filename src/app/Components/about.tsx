@@ -21,7 +21,7 @@ const About = () => {
             >
               {/* YouTube Thumbnail */}
               <Image
-                src="https://i.ytimg.com/an_webp/bsR_DuxXbns/mqdefault_6s.webp?du=3000&sqp=COee8LsG&rs=AOn4CLAyRYg-EkqYehBUfiNPw4aUuiw68Q"
+                src="https://img.youtube.com/vi/bsR_DuxXbns/default.jpg"
                 alt="YouTube Video Thumbnail"
                 width={480}
                 height={270}
@@ -107,7 +107,7 @@ const About = () => {
         <div className="w-full">1000+</div>
       </td>
       <td className="px-4 py-2 text-center">
-        <div className="w-full">75+</div>
+        <div className="w-full">30+</div>
       </td>
     </tr>
     <tr>

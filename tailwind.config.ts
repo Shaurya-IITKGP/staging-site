@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        
+          dancing: ["'Dancing Script'", "serif"],
+      
+        
+      },
       screens: {
         xs: '540px',
         'b1': {'min': '1100px'},

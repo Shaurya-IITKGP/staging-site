@@ -2,6 +2,7 @@
 import React, { useRef }  from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import '../globals.css'
 
 
 const Animate = () =>{
@@ -48,12 +49,12 @@ const Animate = () =>{
                 {text.slice().map((item, index) => (
                     <span 
                         key={index} 
-                        className="ancient-letter text-xs md:text-xl font-serif
+                        className="ancient-letter text-xs md:text-xl
                         text-[#c19661] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                        font-bold tracking-wider"
+                        font-bold tracking-wider dancing-script"
                         style={{
                             textShadow: '0 0 5px rgba(193, 154, 107, 0.5)',
-                            fontFamily: "'Cinzel Decorative', serif"
+                            
                         }}
                     >
                         {item.text}

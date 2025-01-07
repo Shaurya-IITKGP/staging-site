@@ -10,9 +10,10 @@ function Home() {
     "/gallery/Gallery3.jpg",
     "/gallery/Gallery4.jpg",
     "/gallery/Gallery5.jpg",
-    "/gallery/Gallery6.jpg",
     "/gallery/Gallery7.jpg",
     "/gallery/Gallery8.jpg",
+    "/gallery/Gallery9.jpg",
+
     "/gallery/Gallery10.jpg",
     "/gallery/Gallery11.jpg",
     "/gallery/Gallery12.jpg",
@@ -135,7 +136,7 @@ function Home() {
           {images.map((img, index) => (
             <div
               key={index}
-              className={`item w-[150px] h-[200px] flex-shrink-0 relative`}
+              className={`item w-[100px] h-[100px] flex-shrink-0 relative`}
             >
               <Image
                 width={100}
