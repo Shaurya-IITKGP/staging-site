@@ -54,7 +54,7 @@ const Sponsors: React.FC = () => {
       <div className="flex flex-col items-center p-10 relative z-10 space-y-10">
         {Object.entries(groupedSponsors).map(([type, sponsors]) => (
           <div key={type} className="w-3/5 text-center">
-            <div className="text-2xl font-bold mb-4">{type}</div>
+            <div className="text-2xl font-bold text-white mb-4">{type}</div>
             <div className="flex flex-wrap justify-center gap-12">
               {sponsors.map((sponsor, index) => (
                 <div key={index} className="flex flex-col items-center">
