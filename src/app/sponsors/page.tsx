@@ -33,7 +33,6 @@ const Sponsors: React.FC = () => {
     { logo: `/Logos/TEG.png`, type: "MEDIA", link:"https://www.telegraphindia.com/edugraph" },
     { logo: `/Logos/TGH.png`, type: "MEDIA", link:"https://theglobalhues.com/" },
     { logo: `/Logos/SME.png`, type: "MEDIA", link:"https://smestreet.in/" },
-    
   ];
 
   const spons = [
@@ -94,10 +93,10 @@ const Sponsors: React.FC = () => {
       <div className="flex flex-col items-center p-10 relative z-10 space-y-10">
         {Object.entries(groupedSponsorsnew).map(([type, sponsors]) => (
           <div key={type} className="w-3/5 text-center">
-            <div className="text-2xl font-bold text-white mb-4">{type}</div>
-            <div className="flex flex-wrap justify-center gap-12">
+            <div className="text-3xl font-bold text-white mb-8">{type}</div>
+            <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-[rgb(179,143,51)] h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
@@ -122,10 +121,10 @@ const Sponsors: React.FC = () => {
       <div className="flex flex-col items-center p-10 relative z-10 space-y-10">
         {Object.entries(groupedSponsors).map(([type, sponsors]) => (
           <div key={type} className="w-3/5 text-center">
-            <div className="text-2xl font-bold text-white mb-4">{type}</div>
-            <div className="flex flex-wrap justify-center gap-12">
+            <div className="text-3xl font-bold text-white mb-8">{type}</div>
+            <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-amber-950 h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
