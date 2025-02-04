@@ -29,7 +29,7 @@ const Sponsors: React.FC = () => {
     { logo: `/Logos/JJ.png`, type: "MEDIA", link:"https://www.jagranjosh.com/" },
     { logo: `/Logos/PK.png`, type: "MEDIA", link:"https://www.prabhatkhabar.com/" },
     { logo: `/Logos/TAI.png`, type: "MEDIA", link:"https://theacademicinsights.com/" },
-    { logo: `/Logos/SN.png`, type: "MEDIA", link:"" /* not found */ },
+    { logo: `/Logos/SN.png`, type: "MEDIA", link:"https://www.storifynews.com/"  },
     { logo: `/Logos/TEG.png`, type: "MEDIA", link:"https://www.telegraphindia.com/edugraph" },
     { logo: `/Logos/TGH.png`, type: "MEDIA", link:"https://theglobalhues.com/" },
     { logo: `/Logos/SME.png`, type: "MEDIA", link:"https://smestreet.in/" },
@@ -96,7 +96,7 @@ const Sponsors: React.FC = () => {
             <div className="text-3xl font-bold text-white mb-8">{type}</div>
             <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center scale-125">
+                <a key={index} href={sponsor.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-[rgb(179,143,51)] h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
@@ -106,7 +106,7 @@ const Sponsors: React.FC = () => {
                       height={150}
                     />
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -124,7 +124,7 @@ const Sponsors: React.FC = () => {
             <div className="text-3xl font-bold text-white mb-8">{type}</div>
             <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center scale-125">
+                <a key={index}  className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-amber-950 h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
@@ -134,7 +134,7 @@ const Sponsors: React.FC = () => {
                       height={150}
                     />
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
