@@ -4,36 +4,35 @@ import Footer from "../Components/footer";
 
 const Sponsors: React.FC = () => {
   const sponsnew = [
-    { logo: `/Logos/Coal_Logo.png`, type: "TITLE" },
-    { logo: `/Logos/khadi.png`, type: "CO-TITLE" },
-    { logo: `/Logos/P.png`, type: "GIFTING" },
-    { logo: `/Logos/BB.png`, type: "FANTASY" },
-    { logo: `/Logos/PI.png`, type: "TECHNOLOGY" },
-    { logo: `/Logos/Amanzi.png`, type: "GIFTING" },
-    { logo: `/Logos/RS.png`, type: "HYDRATION" },
-    { logo: `/Logos/HED.png`, type: "ESPORTS ENERGY" },
-    { logo: `/Logos/JS.png`, type: "MUSIC STREAMING" },
-    { logo: `/Logos/CL.png`, type: "ED-TECH" },
-    { logo: `/Logos/KH.png`, type: "AUTOMOBILE" },
-    { logo: `/Logos/SM.png`, type: "EVENTS" },
-    { logo: `/Logos/VR.png`, type: "ESPORTS CULTURE" },
-    { logo: `/Logos/CG.png`, type: "ESPORTS LOGISTICS" },
-    { logo: `/Logos/NS.png`, type: "VR PARTNER" },
-    { logo: `/Logos/CC.png`, type: "CHESS" },
-    { logo: `/Logos/COS.png`, type: "SPORTS EQUIPMENT" },
-    { logo: `/Logos/CB-LOGO-BLACK.png`, type: "MEDIA" },
-    { logo: `/Logos/AU2.png`, type: "MEDIA" },
-    { logo: `/Logos/BC.png`, type: "MEDIA" },
-    { logo: `/Logos/TWM.png`, type: "MEDIA" },
-    { logo: `/Logos/KN.png`, type: "MEDIA" },
-    { logo: `/Logos/JJ.png`, type: "MEDIA" },
-    { logo: `/Logos/PK.png`, type: "MEDIA" },
-    { logo: `/Logos/TAI.png`, type: "MEDIA" },
-    { logo: `/Logos/SN.png`, type: "MEDIA" },
-    { logo: `/Logos/TEG.png`, type: "MEDIA" },
-    { logo: `/Logos/TGH.png`, type: "MEDIA" },
-    { logo: `/Logos/SME.png`, type: "MEDIA" },
-    
+    { logo: `/Logos/Coal_Logo.png`, type: "TITLE", link:"https://www.coalindia.in/"},
+    { logo: `/Logos/khadi.png`, type: "CO-TITLE", link:"https://www.ekhadiindia.com/" },
+    { logo: `/Logos/P.png`, type: "GIFTING", link:"https://www.portronics.com/" },
+    { logo: `/Logos/BB.png`, type: "FANTASY", link:"https://www.batball11.com/" },
+    { logo: `/Logos/PI.png`, type: "TECHNOLOGY",link:"https://pinnacleinfotech.com/" },
+    { logo: `/Logos/Amanzi.png`, type: "GIFTING", link:"https://amanziworld.com/" },
+    { logo: `/Logos/RS.png`, type: "HYDRATION", link:"https://www.riverstonehydration.in/" },
+    { logo: `/Logos/HED.png`, type: "ESPORTS ENERGY", link:"https://www.hellenergy.com/in/" },
+    { logo: `/Logos/JS.png`, type: "MUSIC STREAMING", link:"https://www.jiosaavn.com/" },
+    { logo: `/Logos/CL.png`, type: "ED-TECH", link:"https://www.careerlauncher.com/" },
+    { logo: `/Logos/KH.png`, type: "AUTOMOBILE", link:"https://keshav.hyundaimotor.in/" },
+    { logo: `/Logos/SM.png`, type: "EVENTS", link:"https://www.smsportslifestyle.com/" },
+    { logo: `/Logos/VR.png`, type: "ESPORTS CULTURE", link:"https://vrkaa.com/" },
+    { logo: `/Logos/CG.png`, type: "ESPORTS LOGISTICS", link:"" /*not found*/ },
+    { logo: `/Logos/NS.png`, type: "VR PARTNER", link:"https://noscopegaming.in/" },
+    { logo: `/Logos/CC.png`, type: "CHESS", link:"https://www.chess.com/" },
+    { logo: `/Logos/COS.png`, type: "SPORTS EQUIPMENT", link:"https://www.cosco.in/" },
+    { logo: `/Logos/CB-LOGO-BLACK.png`, type: "MEDIA", link:"https://thecareerbeacon.in/" },
+    { logo: `/Logos/AU.png`, type: "MEDIA", link:"https://www.amarujala.com/" },
+    { logo: `/Logos/BC.png`, type: "MEDIA", link:"https://www.thebusinessscan.com/" },
+    { logo: `/Logos/TWM.png`, type: "MEDIA", link:"https://theweeklymail.com/" },
+    { logo: `/Logos/KN.png`, type: "MEDIA", link:"https://knewsindia.in/live-tv/" },
+    { logo: `/Logos/JJ.png`, type: "MEDIA", link:"https://www.jagranjosh.com/" },
+    { logo: `/Logos/PK.png`, type: "MEDIA", link:"https://www.prabhatkhabar.com/" },
+    { logo: `/Logos/TAI.png`, type: "MEDIA", link:"https://theacademicinsights.com/" },
+    { logo: `/Logos/SN.png`, type: "MEDIA", link:"https://www.storifynews.com/"  },
+    { logo: `/Logos/TEG.png`, type: "MEDIA", link:"https://www.telegraphindia.com/edugraph" },
+    { logo: `/Logos/TGH.png`, type: "MEDIA", link:"https://theglobalhues.com/" },
+    { logo: `/Logos/SME.png`, type: "MEDIA", link:"https://smestreet.in/" },
   ];
 
   const spons = [
@@ -97,7 +96,7 @@ const Sponsors: React.FC = () => {
             <div className="text-3xl font-bold text-white mb-8">{type}</div>
             <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center scale-125">
+                <a key={index} href={sponsor.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-[rgb(179,143,51)] h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
@@ -107,7 +106,7 @@ const Sponsors: React.FC = () => {
                       height={150}
                     />
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -125,7 +124,7 @@ const Sponsors: React.FC = () => {
             <div className="text-3xl font-bold text-white mb-8">{type}</div>
             <div className="flex flex-wrap justify-center gap-16">
               {sponsors.map((sponsor, index) => (
-                <div key={index} className="flex flex-col items-center scale-125">
+                <a key={index}  className="flex flex-col items-center scale-125">
                   <div className="max-w-[150px] w-full bg-amber-950 h-[85%] bg-opacity-75 shadow-[#d4ad75] rounded-lg overflow-hidden border-2 border-[#d4ad75]">
                     <Image
                       className="rounded-lg w-full h-full object-contain"
@@ -135,7 +134,7 @@ const Sponsors: React.FC = () => {
                       height={150}
                     />
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
